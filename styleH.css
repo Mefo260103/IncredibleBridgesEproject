@@ -199,10 +199,12 @@ a{
     text-decoration: underline red;
     font-size: x-large;
 }
-
 .ctl{
     width: 60%;
     margin-right: 10%;
+}
+.ctl-header{
+    font-size: x-large;
 }
 .ctl-body{
     width: 100%;
@@ -244,15 +246,30 @@ input:focus{
 .ctr{
     width: 40%;
     background-color:   rgb(201, 19, 19);
+    color: white;
 }
-
-.ctr-text{
-    margin-left: 15%;
+.ctr-text-header{
+    font-size: x-large;
+    margin-left: 5%;
 }
-label{
-    margin-bottom: 50px;
+.ctr-text-information{
+    margin-left: 0%;
+    font-size: larger;
 }
-
+.ctr-text-gr{
+    display: flex;
+    width: 100%;
+}
+.ctr-lb1{
+    width: 30%;
+}
+.ctr-lb2{
+    width: 70%;
+}
+.ctr-text-information li{
+    list-style-type: none;
+    padding-bottom: 20%;
+}
 /* Feedback */
 .container-fb {
     margin-right: 15%;
