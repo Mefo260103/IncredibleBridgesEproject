@@ -19,7 +19,6 @@ body{
 }
 /* footer */
 .ft-info{
-
     width: 100%;
     height: 423px;
     background-color: #000;
@@ -188,13 +187,19 @@ a{
 /* Contact US */
 .header-ct{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 5%;
 }
 .container-ct {
     margin-left: 15%;
     margin-right: 15%;
     display: flex;
+    margin-top: 3%;
 }
+.ct-header{
+    text-decoration: underline red;
+    font-size: x-large;
+}
+
 .ctl{
     width: 60%;
     margin-right: 10%;
@@ -203,8 +208,12 @@ a{
     width: 100%;
 }
 .input-ct{
-    justify-content: space-between;
-    width: 100%;
+    width: 90%;
+    height: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 10%;
 }
 
 .ctl-c{
@@ -212,11 +221,21 @@ a{
     outline: none;
 }
 .inputt-ct{
-    width:  100%;
+    width:  93.7%;
     padding: 5px;
+    resize: none;
+    margin-bottom: 5%;
+    height: 150px;
 }
 .ctl-b{
-    width: 100%;
+    width: 95.7%;
+    height: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+input:focus{
+    outline: none;
 }
 .ctl-gr{
     display: flex;
@@ -230,6 +249,9 @@ a{
 .ctr-text{
     margin-left: 15%;
 }
+label{
+    margin-bottom: 50px;
+}
 
 /* Feedback */
 .container-fb {
@@ -237,7 +259,9 @@ a{
     margin-left: 15%;
 }
 .fb-header {
+    text-decoration: underline red;
     text-align: center;
+    font-size: x-large;
 }
 .fb-text{
     text-align: center;
@@ -250,35 +274,55 @@ a{
     width: 100%;
 }
 .input-fb{
-    justify-content: space-between;
-    width: 100%;
+    width: 90%;
+    height: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 2%;
 }
-
+input:focus{
+    outline: none;
+}
 .fb-c{
     width: 100%;
     outline: none;
+    margin-top: 3%;
 }
 .inputt-fb{
-    width:  100%;
-    padding: 5px;
+    width:  95%;
+    height: 150px;
+    resize: none;
+    margin-top: 2%;
 }
 .fb-b{
-    width: 100%;
+    width: 97.8%;
+    height: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 10px;
 }
 .fb-gr{
     display: flex;
+}
+.fb-body{
+    padding-left: 2.5%;
+    margin-top: 5%;
 }
 
 /* About US */
 
 .ab-main{
     text-align: center;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 20%;
     margin-right: 20%;
 }
 .ab-header-title{
     text-decoration: underline red;
+    font-size: x-large;
+    padding-bottom: 0px;
 }
 .ab-ct{
     text-decoration: none;
