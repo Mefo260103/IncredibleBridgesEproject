@@ -273,7 +273,7 @@ ul{
     height: 700px;
 }
 .querry-left{
-    width: 35%;
+    width: 45%;
 } 
 .querry-left img{
     width: 500px;
@@ -281,8 +281,14 @@ ul{
     margin-top: 120px;
 }
 .querry-right{
-    width: 65%;
+    width: 55%;
+    margin-top: 100px;
+    padding-left: 50px;
 } 
 .querry-right h1 {
-   padding-left: 35%; 
+   padding-left: 45%; 
+}
+.querry-right button{
+    width: 600px;
+    height: 70px;
 }
