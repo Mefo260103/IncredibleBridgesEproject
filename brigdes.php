@@ -15,6 +15,9 @@
 			<th>Brigde</th>
 			<th>Information</th>
 			<th>Thumbnail</th>
+			<th>
+				<a href="add_brigdes.php">Them</a>
+			</th>
 		</tr>
 		<<?php
 			$sql = "select * from           " 
@@ -26,12 +29,11 @@
 		 	<td><<?php echo $row["Brigdes"] ?></td>
 		 	<td><<?php echo $row["Information"] ?></td>
 		 	<td><<?php echo $row["Thumbnail"] ?></td>
+		 	<td>
+		 		<a href="fix_brigdes.php?id=<?php echo $row['ID']; ?>">Sua cau</a> | <a href="delete_brigdes.php?id=<<?php echo $row['ID']; ?>">Xoa cau</a>
+		 	</td>
 		 </tr>
 		 <<?php  ?>
 	</table>	
-	<button>
-		<a href="add_brigdes.php"></a>
-		Them cau
-	</button>
 </body>
 </html>

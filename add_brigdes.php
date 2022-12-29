@@ -28,4 +28,5 @@
 	<label>Thumbnail</label>
 	<input type="text" name="Thumbnail">
 	<br>	
+	<input type="submit" name="Them" value="Them">
 </form>
