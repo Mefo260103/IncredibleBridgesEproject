@@ -1,32 +1,53 @@
 <?php
 require_once('config.php');
 
-//insert, update, delete, select
-// SQL: insert, update, delete
-function execute($sql){
-	//mo ket noi 
-	$conn = mysqli_connect(HOST, DATABASE, USERNAME, PASSWORD);
-	mysqli_set_charset('utf-8');
+function query($sql) {
+	//B1. Mo ket noi toi CSDL
+	$conn = mysqli_connect(HOST, USERNAME, PASSWORD, DATABASE);
+	mysqli_set_charset($conn, 'utf8');
 
-	//query truy van
+	//B2. Them/sua/xoa/lay du lieu tu database -> insert/update/delete/select
 	mysqli_query($conn, $sql);
-	//dong ket noi
-	mysqli_close(%conn);
+
+	//B3. Dong ket noi toi CSDL
+	mysqli_close($conn);
 }
 
-// SQL: select lay du lieu
-function executeResult($sql){
-	$data = []; // noi chua du lieu dau ra
+function queryResult($sql, $isSingle = false) {
+	//B1. Mo ket noi toi CSDL
+	$conn = mysqli_connect(HOST, USERNAME, PASSWORD, DATABASE);
+	mysqli_set_charset($conn, 'utf8');
 
-	//mo ket noi 
-	$conn = mysqli_connect(HOST, DATABASE, USERNAME, PASSWORD);
-	mysqli_set_charset('utf-8');
+	//B2. Them/sua/xoa/lay du lieu tu database -> insert/update/delete/select
+	$resultset = mysqli_query($conn, $sql);
+	$data = [];
 
-	//query truy van
-	$resultset = mysqli_query($conn, $sql); // fetch lay du lieu
-	while(($row = mysqli_fetch_array($resultset, 1)) != null) // 1 : giu lai key value trong cau truy van
-	//dong ket noi
-	mysqli_close(%conn);
+	while(($row = mysqli_fetch_array($resultset, 1)) != null) {
+		$data[] = $row;
+	}
+
+	//B3. Dong ket noi toi CSDL
+	mysqli_close($conn);
+
+	if($isSingle) {
+		if(count($data) == 0) return null;
+
+		return $data[0];
+	}
+	return $data;
+}
+
+function getSecurityMD5($str) {
+	$PRIVATE_KEY = '87346jGJGs23&^%&^sdfgh24jgjhsgdf';
+	return md5(md5($str).$PRIVATE_KEY);
+}
+
+function checkToken() {
+	if(!isset($_COOKIE['token'])) return null;
+
+	$token = $_COOKIE['token'];
+	$sql = "select * from students where token = '$token'";
+	$data = queryResult($sql, true);
 
 	return $data;
 }

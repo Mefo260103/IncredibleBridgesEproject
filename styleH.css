@@ -106,6 +106,8 @@ footer{
     position: fixed;
     width: 100%;
     top:0;
+    left: -25px;
+    right: 0;
 
 }
 
