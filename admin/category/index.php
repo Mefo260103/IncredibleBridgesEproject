@@ -1,5 +1,6 @@
 <<?php 
-require_once ('../../db/dbhelper.php');
+require_once ('../db/config.php');
+require_once ('../db/dbhelper.php');
 ?>
 
 <!DOCTYPE html>
@@ -64,13 +65,13 @@ require_once ('../../db/dbhelper.php');
 						</tr>
 					</thead>
 					<tbody>
-<<?php 
+<?php 
 //Lấy danh sách danh mục từ database
-$sql = 'select * from category';
-$categoryList = executeResult($sql);
+$sql = 'select * from brigdes';
+$brigdesList = executeResult($sql);
 
 $index = 1;
-foreach ($categoryList as $item){
+foreach ($brigdesList as $item){
 	echo '<tr>
 			<td>'.($index++).'</td>
 			<td>'.$item['infomation_id'].'</td>
@@ -80,7 +81,7 @@ foreach ($categoryList as $item){
 			<a href="add.php?id='.$item['id'].'"><button class="bth bth-warning">Sửa</button></a> 
 			</td>
 			<td>
-			<button class="bth bth-danger" onclick='deleteCategory('.$item['id'].')' >Xóa</button>
+			<button class="bth bth-danger" onclick=deleteCategory('.$item['id'].') >Xóa</button>
 			</td>
 		</tr>';
 }
