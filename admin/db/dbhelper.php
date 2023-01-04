@@ -1,7 +1,7 @@
 <?php
 require_once('config.php');
 
-function execute($sql) {
+function query($sql) {
 	//B1. Mo ket noi toi CSDL
 	$conn = mysqli_connect(HOST, USERNAME, PASSWORD, DATABASE);
 	mysqli_set_charset($conn, 'utf8');
@@ -13,7 +13,7 @@ function execute($sql) {
 	mysqli_close($conn);
 }
 
-function executeResult($sql, $isSingle = false) {
+function queryResult($sql, $isSingle = false) {
 	//B1. Mo ket noi toi CSDL
 	$conn = mysqli_connect(HOST, USERNAME, PASSWORD, DATABASE);
 	mysqli_set_charset($conn, 'utf8');
