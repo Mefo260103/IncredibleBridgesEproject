@@ -1,6 +1,6 @@
 <<?php 
-require_once ('../database/config.php');
-require_once ('../database/dbhelper.php');
+require_once ('../db/config.php');
+require_once ('../db/dbhelper.php');
 ?>
 
 <!DOCTYPE html>
@@ -24,22 +24,22 @@ require_once ('../database/dbhelper.php');
 	    <a class="nav-link active" href="index.php">Quản lí Cầu</a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link" href="../product/">Quản lí Thành phố</a>
+	    <a class="nav-link active" href="#">Quản lí Thành Phố</a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link" href="#">Quản lí Đất nước</a>
+	    <a class="nav-link" href="quanlidatnuoc.php">Quản lí Đất nước</a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link" href="#">Quản lí Châu lục</a>
+	    <a class="nav-link" href="quanlichauluc.php">Quản lí Châu lục</a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link" href="feedbacklist.php">Quản lí Feedback</a>
+	    <a class="nav-link" href="#">Quản lí Feedback</a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link" href="gallery.php">Quản lí Gallery</a>
+	    <a class="nav-link" href="#">Quản lí Gallery</a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link" href="#">Quản lí User</a>
+	    <a class="nav-link" href="user.php">Quản lí User</a>
 	  </li>
 	 	</ul>
 
@@ -47,28 +47,30 @@ require_once ('../database/dbhelper.php');
 	<div class="container">
 		<div class="panel panel-primary">
 			<div class="panel-heading">
-				<h2 class="text-center">Quản lí Feedback</h2>
+				<h2 class="text-center">Quản lí Thành Phố</h2>
 			</div>
 			<div class="panel-body">
 				<a href="add.php">
-					<button class="bth bth-success"></button>	
+					<button class="bth bth-success">Thêm Cầu</button>	
 				</a>
 				<table class="table table-bordered table-hover">
 					<thead>
 						<tr>
 							<th>STT</th>
 							<th>Name</th>
-							<th>Email</th>
-							<th>Phone</th>
-							<th>Subject</th>
-                            <th>Message</th>
+							<th>email</th>
+							<th>cmt</th>
+							<th>phone_number</th>							
+							<th>subject_name</th>
+							<th></th>
+							<th></th>							
 						</tr>
 					</thead>
 					<tbody>
 <?php 
 //Lấy danh sách danh mục từ database
 $sql = 'select * from feedback';
-$feedbackList = executeResult($sql);
+$feedbackList = queryResult($sql);
 
 $index = 1;
 foreach ($feedbackList as $item){
@@ -76,9 +78,9 @@ foreach ($feedbackList as $item){
 			<td>'.($index++).'</td>
 			<td>'.$item['name'].'</td>
 			<td>'.$item['email'].'</td>
+			<td>'.$item['cmt'].'</td>
 			<td>'.$item['phone_number'].'</td>
-            <td>'.$item['subject_name'].'</td>
-            <td>'.$item['cmt'].'</td>
+			<td>'.$item['subject_name'].'</td>			
 			<td>
 			<a href="add.php?id='.$item['id'].'"><button class="bth bth-warning">Sửa</button></a> 
 			</td>

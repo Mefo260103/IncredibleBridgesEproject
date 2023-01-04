@@ -1,6 +1,6 @@
-<?php 
-require_once ('../database/config.php');
-require_once ('../database/dbhelper.php');
+<<?php 
+require_once ('../db/config.php');
+require_once ('../db/dbhelper.php');
 ?>
 
 <!DOCTYPE html>
@@ -19,24 +19,24 @@ require_once ('../database/dbhelper.php');
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-<ul class="nav nav-tabs">
+		<ul class="nav nav-tabs">
 	  <li class="nav-item">
 	    <a class="nav-link active" href="index.php">Quản lí Cầu</a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link" href="../product/">Quản lí Thành phố</a>
+	    <a class="nav-link active" href="quanlithanhpho.php">Quản lí Thành Phố</a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link" href="#">Quản lí Đất nước</a>
+	    <a class="nav-link" href="quanlidatnuoc.php">Quản lí Đất nước</a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link" href="#">Quản lí Châu lục</a>
+	    <a class="nav-link" href="quanlichauluc.php">Quản lí Châu lục</a>
 	  </li>
 	  <li class="nav-item">
 	    <a class="nav-link" href="feedbacklist.php">Quản lí Feedback</a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link" href="gallery.php">Quản lí Gallery</a>
+	    <a class="nav-link" href="#">Quản lí Gallery</a>
 	  </li>
 	  <li class="nav-item">
 	    <a class="nav-link" href="#">Quản lí User</a>
@@ -51,25 +51,25 @@ require_once ('../database/dbhelper.php');
 			</div>
 			<div class="panel-body">
 				<a href="add.php">
-					<button class="bth bth-success">Thêm Cầu</button>	
+					<button class="bth bth-success">Thêm</button>	
 				</a>
 				<table class="table table-bordered table-hover">
 					<thead>
 						<tr>
 							<th>STT</th>
-							<th>Full Name</th>
-							<th>User Name</th>
-							<th>Password</th>
-							<th>Email</th>
+							<th>fullname</th>
+							<th>username</th>
+							<th>password</th>
+							<th>email</th>						
 							<th></th>
-                            <th></th>
+							<th></th>							
 						</tr>
 					</thead>
 					<tbody>
 <?php 
 //Lấy danh sách danh mục từ database
 $sql = 'select * from users';
-$usersList = executeResult($sql);
+$usersList = queryResult($sql);
 
 $index = 1;
 foreach ($usersList as $item){
@@ -78,7 +78,7 @@ foreach ($usersList as $item){
 			<td>'.$item['fullname'].'</td>
 			<td>'.$item['username'].'</td>
 			<td>'.$item['password'].'</td>
-            <td>'.$item['email'].'</td>
+			<td>'.$item['email'].'</td>			
 			<td>
 			<a href="add.php?id='.$item['id'].'"><button class="bth bth-warning">Sửa</button></a> 
 			</td>
