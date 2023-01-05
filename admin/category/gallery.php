@@ -24,6 +24,9 @@ require_once ('../database/dbhelper.php');
 	    <a class="nav-link active" href="index.php">Quản lí Cầu</a>
 	  </li>
 	  <li class="nav-item">
+	    <a class="nav-link" href="information.php">Quản lí Info</a>
+	  </li>	  	  
+	  <li class="nav-item">
 	    <a class="nav-link" href="../product/">Quản lí Thành phố</a>
 	  </li>
 	  <li class="nav-item">

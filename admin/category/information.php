@@ -24,10 +24,10 @@ require_once ('../db/dbhelper.php');
 	    <a class="nav-link active" href="index.php">Quản lí Cầu</a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link" href="information.php">Quản lí Info</a>
+	    <a class="nav-link" href="#">Quản lí Info</a>
 	  </li>	  	  
 	  <li class="nav-item">
-	    <a class="nav-link active" href="#">Quản lí Thành Phố</a>
+	    <a class="nav-link active" href="quanlithanhpho.php">Quản lí Thành Phố</a>
 	  </li>
 	  <li class="nav-item">
 	    <a class="nav-link" href="quanlidatnuoc.php">Quản lí Đất nước</a>
@@ -42,7 +42,7 @@ require_once ('../db/dbhelper.php');
 	    <a class="nav-link" href="#">Quản lí Gallery</a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link" href="user.php">Quản lí User</a>
+	    <a class="nav-link" href="#">Quản lí User</a>
 	  </li>
 	 	</ul>
 
@@ -50,7 +50,7 @@ require_once ('../db/dbhelper.php');
 	<div class="container">
 		<div class="panel panel-primary">
 			<div class="panel-heading">
-				<h2 class="text-center">Quản lí Thành Phố</h2>
+				<h2 class="text-center">Quản lí User</h2>
 			</div>
 			<div class="panel-body">
 				<a href="add.php">
@@ -60,24 +60,22 @@ require_once ('../db/dbhelper.php');
 					<thead>
 						<tr>
 							<th>STT</th>
-							<th>Name</th>
-							<th>Address</th>
+							<th>Info</th>					
 							<th></th>
-							<th></th>
+							<th></th>							
 						</tr>
 					</thead>
 					<tbody>
 <?php 
 //Lấy danh sách danh mục từ database
-$sql = 'select * from city';
-$cityList = queryResult($sql);
+$sql = 'select * from information';
+$informationList = queryResult($sql);
 
 $index = 1;
-foreach ($cityList as $item){
+foreach ($informationList as $item){
 	echo '<tr>
 			<td>'.($index++).'</td>
-			<td>'.$item['name_city'].'</td>
-			<td>'.$item['address'].'</td>
+			<td>'.$item['content'].'</td>		
 			<td>
 			<a href="add.php?id='.$item['id'].'"><button class="bth bth-warning">Sửa</button></a> 
 			</td>
