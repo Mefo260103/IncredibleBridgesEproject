@@ -203,7 +203,7 @@ a{
     margin-top: 3%;
 }
 .ct-header{
-    text-decoration: underline red;
+    text-decoration: underline rgb(199, 27, 27);
     font-size: x-large;
 }
 .ctl{
@@ -283,7 +283,7 @@ input:focus{
     margin-left: 15%;
 }
 .fb-header {
-    text-decoration: underline red;
+    text-decoration: underline rgb(199, 27, 27);
     text-align: center;
     font-size: x-large;
 }
@@ -344,21 +344,22 @@ input:focus{
     margin-right: 20%;
 }
 .ab-header-title{
-    text-decoration: underline red;
+    text-decoration: underline rgb(199, 27, 27);
     font-size: x-large;
     padding-bottom: 0px;
 }
 .ab-ct{
     text-decoration: none;
-    color: red;
+    color: rgb(199, 27, 27)
 }
 
 .ab-ft .list-icon li a i{
-    color:red;
+    color:rgb(199, 27, 27);
 }
 .ab-ft .list-icon li a i:hover{
-    transform:translateY(-7px);
-    transition: 0.5s;
+    color: #212529;
+    transform:translateY(-10px);
+    transition: 0.25s;
 }
 .ab-ft ul{
     display: inline-flex;
@@ -375,4 +376,7 @@ input:focus{
 }
 .ab-ft .fa-brands{
     transition: 0.25s;
+}
+.ab-ft ul li a i{
+    font-size: 30px;
 }

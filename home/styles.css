@@ -10,9 +10,6 @@ body{
 
 
 }
-.slideshow-container{
-    position: relative;
-}
 .navbar{
     position: absolute;
     display: flex;
@@ -24,7 +21,7 @@ body{
     width: 95%;
     background-color: transparent;
     z-index: 99;
-
+    
 }
 .navbar-left .lg{
     font-size: 25px ;
@@ -64,16 +61,31 @@ a{
     text-decoration: none;
 }
 
-.Slide{
+.slideshow-container{
+    position: relative;
+}
+
+/* .Slide{
     position: relative;
     width: 100%;
     height: 100%;
     
-}
+} */
 .mySlide
 {
-    /* position: relative; */
-
+    position: relative;
+    margin:auto;
+}
+.active{
+    background-color: #717171;
+}
+.fade{
+    animation-name: fade;
+    animation-duration: 2s;
+}
+@keyframes fade{
+    from{opacity: .4;}
+    to{opacity:1}
 }
 .text{
     color: #f2f2f2;
@@ -105,6 +117,7 @@ a{
     color: aqua;
     transition: 0.5s;
 }
+
 
 
 /*  Menu   */
