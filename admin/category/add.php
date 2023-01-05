@@ -1,5 +1,5 @@
 <<?php 
-require_once ('../../db/dbhelper.php');
+require_once ('../db/dbhelper.php');
 
 $id = '';
 if (!empty($_POST)) {

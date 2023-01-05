@@ -21,10 +21,10 @@ require_once ('../db/dbhelper.php');
 <body>
 		<ul class="nav nav-tabs">
 	  <li class="nav-item">
-	    <a class="nav-link active" href="#">Quản lí Cầu</a>
+	    <a class="nav-link active" href="index.php">Quản lí Cầu</a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link" href="quanlithanhpho.php">Quản lí Thành Phố</a>
+	    <a class="nav-link active" href="#">Quản lí Thành Phố</a>
 	  </li>
 	  <li class="nav-item">
 	    <a class="nav-link" href="quanlidatnuoc.php">Quản lí Đất nước</a>
@@ -36,7 +36,7 @@ require_once ('../db/dbhelper.php');
 	    <a class="nav-link" href="#">Quản lí Feedback</a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link" href="feedbacklist.php">Quản lí Gallery</a>
+	    <a class="nav-link" href="#">Quản lí Gallery</a>
 	  </li>
 	  <li class="nav-item">
 	    <a class="nav-link" href="user.php">Quản lí User</a>
@@ -47,7 +47,7 @@ require_once ('../db/dbhelper.php');
 	<div class="container">
 		<div class="panel panel-primary">
 			<div class="panel-heading">
-				<h2 class="text-center">Quản lí Cầu</h2>
+				<h2 class="text-center">Quản lí Thành Phố</h2>
 			</div>
 			<div class="panel-body">
 				<a href="add.php">
@@ -57,24 +57,30 @@ require_once ('../db/dbhelper.php');
 					<thead>
 						<tr>
 							<th>STT</th>
-							<th>Tên Cầu</th>
-							<th>Thumbnail</th>
+							<th>Name</th>
+							<th>email</th>
+							<th>cmt</th>
+							<th>phone_number</th>							
+							<th>subject_name</th>
 							<th></th>
-							<th></th>
+							<th></th>							
 						</tr>
 					</thead>
 					<tbody>
 <?php 
 //Lấy danh sách danh mục từ database
-$sql = 'select * from brigdes';
-$brigdesList = queryResult($sql);
+$sql = 'select * from feedback';
+$feedbackList = queryResult($sql);
 
 $index = 1;
-foreach ($brigdesList as $item){
+foreach ($feedbackList as $item){
 	echo '<tr>
 			<td>'.($index++).'</td>
-			<td>'.$item['name_brigdes'].'</td>
-			<td>'.$item['thumbnail'].'</td>
+			<td>'.$item['name'].'</td>
+			<td>'.$item['email'].'</td>
+			<td>'.$item['cmt'].'</td>
+			<td>'.$item['phone_number'].'</td>
+			<td>'.$item['subject_name'].'</td>			
 			<td>
 			<a href="add.php?id='.$item['id'].'"><button class="bth bth-warning">Sửa</button></a> 
 			</td>

@@ -1,6 +1,6 @@
-<<?php 
-require_once ('../db/config.php');
-require_once ('../db/dbhelper.php');
+<?php 
+require_once ('../database/config.php');
+require_once ('../database/dbhelper.php');
 ?>
 
 <!DOCTYPE html>
@@ -19,27 +19,27 @@ require_once ('../db/dbhelper.php');
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-		<ul class="nav nav-tabs">
+<ul class="nav nav-tabs">
 	  <li class="nav-item">
-	    <a class="nav-link active" href="#">Quản lí Cầu</a>
+	    <a class="nav-link active" href="index.php">Quản lí Cầu</a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link" href="quanlithanhpho.php">Quản lí Thành Phố</a>
+	    <a class="nav-link" href="../product/">Quản lí Thành phố</a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link" href="quanlidatnuoc.php">Quản lí Đất nước</a>
+	    <a class="nav-link" href="#">Quản lí Đất nước</a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link" href="quanlichauluc.php">Quản lí Châu lục</a>
+	    <a class="nav-link" href="#">Quản lí Châu lục</a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link" href="#">Quản lí Feedback</a>
+	    <a class="nav-link" href="feedbacklist.php">Quản lí Feedback</a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link" href="feedbacklist.php">Quản lí Gallery</a>
+	    <a class="nav-link" href="gallery.php">Quản lí Gallery</a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link" href="user.php">Quản lí User</a>
+	    <a class="nav-link" href="#">Quản lí User</a>
 	  </li>
 	 	</ul>
 
@@ -47,7 +47,7 @@ require_once ('../db/dbhelper.php');
 	<div class="container">
 		<div class="panel panel-primary">
 			<div class="panel-heading">
-				<h2 class="text-center">Quản lí Cầu</h2>
+				<h2 class="text-center">Quản lí Gallery</h2>
 			</div>
 			<div class="panel-body">
 				<a href="add.php">
@@ -57,7 +57,7 @@ require_once ('../db/dbhelper.php');
 					<thead>
 						<tr>
 							<th>STT</th>
-							<th>Tên Cầu</th>
+							<th>Name</th>
 							<th>Thumbnail</th>
 							<th></th>
 							<th></th>
@@ -66,11 +66,11 @@ require_once ('../db/dbhelper.php');
 					<tbody>
 <?php 
 //Lấy danh sách danh mục từ database
-$sql = 'select * from brigdes';
-$brigdesList = queryResult($sql);
+$sql = 'select * from gallery';
+$galleryList = executeResult($sql);
 
 $index = 1;
-foreach ($brigdesList as $item){
+foreach ($galleryList as $item){
 	echo '<tr>
 			<td>'.($index++).'</td>
 			<td>'.$item['name_brigdes'].'</td>
