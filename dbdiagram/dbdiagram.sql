@@ -18,13 +18,13 @@ CREATE TABLE `city` (
 
 CREATE TABLE `information` (
   `id` int PRIMARY KEY,
-  `city_id` int,
+  `brigdes_id` int,
   `content` longtext
 );
 
 CREATE TABLE `brigdes` (
   `id` int PRIMARY KEY,
-  `infomation_id` int,
+  `city_id` int,
   `name_brigdes` varchar(255),
   `thumbnail` varchar(255)
 );
@@ -49,6 +49,6 @@ ALTER TABLE `country` ADD FOREIGN KEY (`continents_id`) REFERENCES `continents` 
 
 ALTER TABLE `city` ADD FOREIGN KEY (`country_id`) REFERENCES `country` (`id`);
 
-ALTER TABLE `information` ADD FOREIGN KEY (`city_id`) REFERENCES `city` (`id`);
+ALTER TABLE `brigdes` ADD FOREIGN KEY (`city_id`) REFERENCES `city` (`id`);
 
-ALTER TABLE `brigdes` ADD FOREIGN KEY (`infomation_id`) REFERENCES `information` (`id`);
+ALTER TABLE `information` ADD FOREIGN KEY (`brigdes_id`) REFERENCES `brigdes` (`id`);
