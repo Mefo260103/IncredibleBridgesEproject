@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 29, 2022 lúc 03:20 PM
+-- Thời gian đã tạo: Th1 07, 2023 lúc 04:52 PM
 -- Phiên bản máy phục vụ: 10.4.27-MariaDB
 -- Phiên bản PHP: 8.1.12
 
@@ -26,6 +26,8 @@ SET time_zone = "+00:00";
 --
 -- Cấu trúc bảng cho bảng `brigdes`
 --
+-- Tạo: Th12 28, 2022 lúc 05:23 PM
+--
 
 CREATE TABLE `brigdes` (
   `id` int(11) NOT NULL,
@@ -35,181 +37,35 @@ CREATE TABLE `brigdes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+-- RELATIONSHIPS FOR TABLE `brigdes`:
+--   `infomation_id`
+--       `information` -> `id`
+--
+
+--
 -- Đang đổ dữ liệu cho bảng `brigdes`
 --
 
 INSERT INTO `brigdes` (`id`, `infomation_id`, `name_brigdes`, `thumbnail`) VALUES
-(1, NULL, '[THE GOLDEN GATE BRIDGE]', ''),
-(2, NULL, '[AKASHI KAIKYO BRIDGE]', ''),
-(3, NULL, '[SUNSHINE SKYWAY BRIDGE]', ''),
-(4, NULL, '[TOWER BRIDGE]', ''),
-(5, NULL, '[FIRTH OF FORTH BRIDGE]', ''),
-(6, NULL, '[BROOKLYN BRIDGE]', ''),
-(7, NULL, '[CHESAPEAKE BAY BRIDGE]', ''),
-(8, NULL, '[SYDNEY HARBOR BRIDGE]', ''),
-(9, NULL, '[LEONARD P. ZAKIM BRIDGE]', ''),
-(10, NULL, '[LONDON BRIDGE]', ''),
-(11, NULL, '[DANYANG KUNSHAN BRIDGE]', ''),
-(12, NULL, '[TIANJIN GRAND BRIDGE]', ''),
-(13, NULL, '[MANCHAC SWAMP BRIDGE]', ''),
-(14, NULL, '[DUGE BRIDGE]', ''),
-(15, NULL, '[SIDU RIVER BRIDGE]', ''),
-(16, NULL, '[PULI BRIDGE]', ''),
-(17, NULL, '[BRIDGE NEAR LIMYRA]', ''),
-(18, NULL, '[KAPELLBRUCKE]', ''),
-(19, NULL, '[FRANKFORD AVENUE BRIDGE]', '');
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `city`
---
-
-CREATE TABLE `city` (
-  `id` int(11) NOT NULL,
-  `country_id` int(11) DEFAULT NULL,
-  `name_city` varchar(50) NOT NULL,
-  `address` varchar(50) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Đang đổ dữ liệu cho bảng `city`
---
-
-INSERT INTO `city` (`id`, `country_id`, `name_city`, `address`) VALUES
-(1, 1, '[San Francisco]', '[null]'),
-(2, 2, '[Kobe]', '[Akashi Strait]'),
-(3, 3, '[Florida]', '[null]'),
-(4, 4, '[Southwark]', '[River Thames]'),
-(5, 5, '[Edinburgh]', '[null]'),
-(6, 6, '[null]', '[East River]'),
-(7, 7, '[Virginia]', '[null]'),
-(8, 8, '[Port Jackson]', '[Bay]'),
-(9, 9, '[Boston]', '[Charles River]'),
-(10, 10, '[Central London]', '[River Thames]'),
-(11, 11, '[Jiangsu]', '[null]'),
-(12, 12, '[Tianjin]', '[East of China]'),
-(13, 13, '[Louisiana]', '[Manchac Swamp]'),
-(14, 14, '[Shuicheng]', '[Beipan River]'),
-(15, 15, '[Hubei]', '[null]'),
-(16, 16, '[Xuanwei]', '[null]'),
-(17, 17, '[Kırkgöz]', '[null]'),
-(18, 18, '[Lucerne]', '[Luzern]'),
-(19, 19, '[Northeast Philadelphia]', '[Holmesburg]');
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `continents`
---
-
-CREATE TABLE `continents` (
-  `id` int(11) NOT NULL,
-  `name_continents` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Đang đổ dữ liệu cho bảng `continents`
---
-
-INSERT INTO `continents` (`id`, `name_continents`) VALUES
-(1, '[America]'),
-(2, '[Asia]'),
-(3, '[Europe]'),
-(4, '[Europe]'),
-(5, '[Europe]'),
-(6, '[America]'),
-(7, '[America]'),
-(8, '[Oceania]'),
-(9, '[America]'),
-(10, '[Europe]'),
-(11, '[Asia]'),
-(12, '[Asia]'),
-(13, '[America]'),
-(14, '[Asia]'),
-(15, '[Asia]'),
-(16, '[Asia]'),
-(17, '[Europe]'),
-(18, '[Europe]'),
-(19, '[America]');
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `country`
---
-
-CREATE TABLE `country` (
-  `id` int(11) NOT NULL,
-  `name_country` varchar(50) NOT NULL,
-  `continents_id` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Đang đổ dữ liệu cho bảng `country`
---
-
-INSERT INTO `country` (`id`, `name_country`, `continents_id`) VALUES
-(1, '[California]', 1),
-(2, '[Japan]', 2),
-(3, '[Petersburg]', 3),
-(4, '[London]', 4),
-(5, '[Scotland]', 5),
-(6, '[New York]', 6),
-(7, '[US]', 7),
-(8, '[Australia]', 8),
-(9, '[Massachusetts]', 9),
-(10, '[London]', 10),
-(11, '[China]', 11),
-(12, '[China]', 12),
-(13, '[US]', 13),
-(14, '[Yunnan]', 14),
-(15, '[China]', 15),
-(16, '[China]', 16),
-(17, '[Turkey]', 17),
-(18, '[Switzerland]', 18),
-(19, '[US]', 19);
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `feedback`
---
-
-CREATE TABLE `feedback` (
-  `id` int(11) NOT NULL,
-  `name` varchar(50) DEFAULT NULL,
-  `email` varchar(50) DEFAULT NULL,
-  `cmt` varchar(500) DEFAULT NULL,
-  `phone_number` varchar(20) DEFAULT NULL,
-  `subject_name` varchar(200) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `gallery`
---
-
-CREATE TABLE `gallery` (
-  `id` int(11) NOT NULL,
-  `name_brigdes` varchar(50) NOT NULL,
-  `thumbnail` varchar(500) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `users`
---
-
-CREATE TABLE `users` (
-  `id` int(11) NOT NULL,
-  `fullname` varchar(40) NOT NULL,
-  `username` varchar(40) NOT NULL,
-  `password` varchar(60) NOT NULL,
-  `email` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+(1, 1, '[THE GOLDEN GATE BRIDGE]', '<img src=\"https://www.amazingbridges.ml/IMAGES/gold.jpg\" style=\"height: 250px; width: 350px; float: left; padding: 15px;\">'),
+(2, 2, '[AKASHI KAIKYO BRIDGE]', '<img src=\"https://www.amazingbridges.ml/IMAGES/Akashi%20Kaikyo%20Bridge.JPG\" style=\"height: 250px; width: 350px; float: left; padding: 15px;\">'),
+(3, 3, '[SUNSHINE SKYWAY BRIDGE]', '<img src=\"https://www.amazingbridges.ml/IMAGES/Sun%20Shine%20Sky%20Way.jpg\" style=\"height: 250px; width: 350px; float: left; padding: 15px;\">'),
+(4, 4, '[TOWER BRIDGE]', '<img src=\"https://www.amazingbridges.ml/IMAGES/Tower%20Bridge%20img.jpg\" style=\"height: 250px; width: 350px; float: left; padding: 15px;\">'),
+(5, 5, '[FIRTH OF FORTH BRIDGE]', '<img src=\"https://www.amazingbridges.ml/IMAGES/forth%20bridge.jpg\" style=\"height: 250px; width: 350px; float: left; padding: 15px;\">'),
+(6, 6, '[BROOKLYN BRIDGE]', '<img src=\"https://www.amazingbridges.ml/IMAGES/BROOKLYN%201.jpg\" style=\"height: 250px; width: 350px; float: left; padding: 15px;\">'),
+(7, 7, '[CHESAPEAKE BAY BRIDGE]', '<img src=\"https://www.amazingbridges.ml/IMAGES/Chesapeake%20Bay%20Bridge%20Tunnel.jpg\" style=\"height: 250px; width: 350px; float: left; padding: 15px;\">'),
+(8, 8, '[SYDNEY HARBOR BRIDGE]', '<img src=\"https://www.amazingbridges.ml/IMAGES/Sydney%20Harbour%20Bridge.jpg\" style=\"height: 250px; width: 350px; float: left; padding: 15px;\">'),
+(9, 9, '[LEONARD P. ZAKIM BRIDGE]', '<img src=\"https://www.amazingbridges.ml/IMAGES/LEONARD%20P.%20ZAKIM%20BUNKER%20HILL%20BRIDGE.jpg\" style=\"height: 250px; width: 350px; float: left; padding: 15px;\">'),
+(10, 10, '[LONDON BRIDGE]', '<img src=\"https://www.amazingbridges.ml/IMAGES/LONDON%20BRIDGE%20(LAKE%20HAVASU%20CITY).jpg\" style=\"height: 250px; width: 350px; float: left; padding: 15px;\">'),
+(11, 11, '[DANYANG KUNSHAN BRIDGE]', '<img src=\"https://www.amazingbridges.ml/IMAGES/DanyangKunshan%20Grand%20Bridge.jpg\" style=\"height: 250px; width: 350px; float: left; padding: 15px;\">'),
+(12, 12, '[TIANJIN GRAND BRIDGE]', '<img src=\"https://www.amazingbridges.ml/IMAGES/TIANJIN%20GRAND%20BRIDGE.jpg\" style=\"height: 250px; width: 350px; float: left; padding: 15px;\">'),
+(13, 13, '[MANCHAC SWAMP BRIDGE]', '<img src=\"https://www.amazingbridges.ml/IMAGES/MANCHAC%20SWAMP%20BRIDGE.jpg\" style=\"height: 250px; width: 350px; float: left; padding: 15px;\">'),
+(14, 14, '[DUGE BRIDGE]', '<img src=\"https://www.amazingbridges.ml/IMAGES/DUGE%20BRIDGEE.jpg\" style=\"height: 250px; width: 350px; float: left; padding: 15px;\">'),
+(15, 15, '[SIDU RIVER BRIDGE]', '<img src=\"https://www.amazingbridges.ml/IMAGES/Sidu%20river%20bridge.jpg\" style=\"height: 250px; width: 350px; float: left; padding: 15px;\">'),
+(16, 16, '[PULI BRIDGE]', '<img src=\"https://www.amazingbridges.ml/IMAGES/puli%20bridge.jpg\" style=\"height: 250px; width: 350px; float: left; padding: 15px;\">'),
+(17, 17, '[BRIDGE NEAR LIMYRA]', '<img src=\"https://www.amazingbridges.ml/IMAGES/Bridge%20near%20Limyra.jpg\" style=\"height: 250px; width: 350px; float: left; padding: 15px;\">'),
+(18, 18, '[KAPELLBRUCKE]', '<img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Kapellbruecke.JPG/1024px-Kapellbruecke.JPG\" style=\"height: 250px; width: 350px; float: left; padding: 15px;\">'),
+(19, 19, '[FRANKFORD AVENUE BRIDGE]', '<img src=\"https://www.amazingbridges.ml/IMAGES/fraank%20ford.jpg\" style=\"height: 250px; width: 350px; float: left; padding: 15px;\">');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -223,44 +79,6 @@ ALTER TABLE `brigdes`
   ADD KEY `address_id` (`infomation_id`);
 
 --
--- Chỉ mục cho bảng `city`
---
-ALTER TABLE `city`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `country_id` (`country_id`);
-
---
--- Chỉ mục cho bảng `continents`
---
-ALTER TABLE `continents`
-  ADD PRIMARY KEY (`id`);
-
---
--- Chỉ mục cho bảng `country`
---
-ALTER TABLE `country`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `continents_id` (`continents_id`);
-
---
--- Chỉ mục cho bảng `feedback`
---
-ALTER TABLE `feedback`
-  ADD PRIMARY KEY (`id`);
-
---
--- Chỉ mục cho bảng `gallery`
---
-ALTER TABLE `gallery`
-  ADD PRIMARY KEY (`id`);
-
---
--- Chỉ mục cho bảng `users`
---
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`);
-
---
 -- AUTO_INCREMENT cho các bảng đã đổ
 --
 
@@ -271,42 +89,6 @@ ALTER TABLE `brigdes`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
--- AUTO_INCREMENT cho bảng `city`
---
-ALTER TABLE `city`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
-
---
--- AUTO_INCREMENT cho bảng `continents`
---
-ALTER TABLE `continents`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
-
---
--- AUTO_INCREMENT cho bảng `country`
---
-ALTER TABLE `country`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
-
---
--- AUTO_INCREMENT cho bảng `feedback`
---
-ALTER TABLE `feedback`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT cho bảng `gallery`
---
-ALTER TABLE `gallery`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT cho bảng `users`
---
-ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
 -- Các ràng buộc cho các bảng đã đổ
 --
 
@@ -315,18 +97,6 @@ ALTER TABLE `users`
 --
 ALTER TABLE `brigdes`
   ADD CONSTRAINT `brigdes_ibfk_1` FOREIGN KEY (`infomation_id`) REFERENCES `information` (`id`);
-
---
--- Các ràng buộc cho bảng `city`
---
-ALTER TABLE `city`
-  ADD CONSTRAINT `city_ibfk_1` FOREIGN KEY (`country_id`) REFERENCES `country` (`id`);
-
---
--- Các ràng buộc cho bảng `country`
---
-ALTER TABLE `country`
-  ADD CONSTRAINT `country_ibfk_1` FOREIGN KEY (`continents_id`) REFERENCES `continents` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
