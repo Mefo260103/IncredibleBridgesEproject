@@ -1,8 +1,28 @@
 <?php 
 require_once ('../admin/db/config.php');
-require_once ('../admin/db/dbhelper.php');
-?>
 
+require_once ('../admin/db/dbhelper.php');
+if(!empty($_POST)) {
+
+	$namebridges = $_POST['name_brigdes'];
+	$thumbnail = $_POST['thumbnail'];
+    $address = $_POST['address'];
+    $city = $_POST['name_city'];
+    $country = $_POST['name_country'];
+    $continent= $_POST['name_continents'];
+
+	$sql = " update brigdes set name_brigdes = '$namebridges', thumbnail = '$thumbnail';
+           update city set name_city = '$city', address = '$address';
+           update country set name_country = '$country';
+           update continents set name_continents = '$continent';";
+	query($sql);
+}
+$sql = "select brigdes.id, brigdes.name_brigdes, brigdes.thumbnail, continents.name_continents, country.name_country, city.name_city, city.address
+        from brigdes, continents, country, city
+        where continents.id = country.continents_id and 
+        country.id = city.country_id and city.id = brigdes.city_id and brigdes.id = ".$_GET['id'];
+$item = queryResult($sql, true);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -59,7 +79,7 @@ require_once ('../admin/db/dbhelper.php');
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link  active" href="../pages/bridgeslist.php">
+          <a class="nav-link active " href="../pages/bridgeslist.php">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
               <svg width="12px" height="12px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>office</title>
@@ -99,7 +119,7 @@ require_once ('../admin/db/dbhelper.php');
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link  " href="../pages/adminlist.php">
+          <a class="nav-link" href="../pages/adminlist.php">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
               <svg width="12px" height="12px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>office</title>
@@ -117,7 +137,7 @@ require_once ('../admin/db/dbhelper.php');
             </div>
             <span class="nav-link-text ms-1">Admin List</span>
           </a>
-        </li> 
+        </li>
         
         <li class="nav-item mt-3">
           <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Account pages</h6>
@@ -173,9 +193,9 @@ require_once ('../admin/db/dbhelper.php');
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
             <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li>
-            <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Bridges List</li>
+            <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Admin List</li>
           </ol>
-          <h6 class="font-weight-bolder mb-0">Bridges List</h6>
+          <h6 class="font-weight-bolder mb-0">Admin List</h6>
         </nav>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center">
@@ -288,70 +308,46 @@ require_once ('../admin/db/dbhelper.php');
         <div class="col-12">
           <div class="card mb-4">
             <div class="card-header pb-0">
-              <h6>Bridges List</h6>
+              <h6>Admin List</h6>
             </div>
-            <div class="container-fluid">
-		          <div class="panel panel-primary">
-                <div class="panel-body">
-                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <a href="addbridges.php">
-                    <button class="btn btn-primary me-md-2" type="button">Add Bridges</button></a>
-                  </div>
-                  <table class="table table-bordered-0 table-hover">
-                    <thead>
-                      <tr>
-                        <th class=" text-center">No</th>
-                        <th class="col-0 text-center">Name Bridges</th>
-                        <th class="col-0 text-center">Thumbnail</th>
-                        <th class="col-0 text-center">Address</th>
-                        <th class="col-1 text-center">City</th>
-                        <th class="col-1 text-center">Country</th>
-                        <th class="col-1 text-center">Continent</th>
-                        <th class="col-1 text-center"></th>
-                        <th class="col-1 text-center"></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <?php 
-                      //Lấy danh sách danh mục từ database
-                      $sql = 'select brigdes.id, brigdes.name_brigdes, brigdes.thumbnail, continents.name_continents, country.name_country, city.name_city, city.address
-                              from brigdes, continents, country, city
-                              where continents.id = country.continents_id and 
-                              country.id = city.country_id and city.id = brigdes.city_id';
-                      $brigdesList = queryResult($sql);
-                      
-                      $index = 1;
-                      foreach ($brigdesList as $item){
-                        echo '<tr>
-                            <td class=" text-center">'.($index++).'</td>
-                            <td class="col-0 text-center">'.$item['name_brigdes'].'</td>
-                            <td class="col-1 text-center">'.$item['thumbnail'].'</td>
-                            <td class="col-0 text-center">'.$item['address'].'</td>
-                            <td class="col-1 text-center">'.$item['name_city'].'</td>
-                            <td class="col-1 text-center">'.$item['name_country'].'</td>
-                            <td class="col-1 text-center">'.$item['name_continents'].'</td>
-                            <div class="d-grid gap-1 col-1 mx-auto">
-                            <td>
-                            <a href="edit.php?id='.$item['id'].'"><button class="btn btn-warning mb-0" type="button">Edit</button></a> 
-                            </td>
-                            </div>
-                            <div class="d-grid gap-1 col-1 mx-auto">
-                            <td>
-                            <a href="delete.php?id='.$item['id'].'"><button class="btn btn-danger mb-0">Delete</button></a>
-                            </td>
-                            </div>
-                          </tr>';
-                      }
-                      ?>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
+                <form method="post" class="form-control ">
+                    <div class="d-grid gap-2 d-md-block">
+                        <button class="btn btn-primary" type="button"><a href="bridgeslist.php">Back to list</a></button>
+                    </div>
+                    <div class="mb-2">
+                    <label class="form-label">Name Bridges: </label>
+                    <input type="text" name="name_brigdes" class="form-control" placeholder="Enter fullname" value="<?=$item['name_brigdes']?>" />
+                    </div>
+                    <div class="mb-0">
+                    <label class="form-label">Thumbnail: </label>
+                    </div>
+                    <div class="input-group mb-2">
+                    <input type="file" class="form-control" name="thumbnail" aria-label="Upload" value="<?=$item['thumbnail']?>"/>
+                    </div>
+                    <div class="mb-2">
+                    <label class="form-label">Address: </label>
+                    <input type="text" name="address" class="form-control" placeholder="Enter fullname" value="<?=$item['address']?>"/>
+                    </div>
+                    <div class="mb-2">
+                    <label class="form-label">City: </label>
+                    <input type="text" name="name_city" class="form-control" placeholder="Enter fullname" value="<?=$item['name_city']?>"/>
+                    </div>
+                    <div class="mb-2">
+                    <label class="form-label">Country: </label>
+                    <input type="text" name="name_country" class="form-control" placeholder="Enter fullname" value="<?=$item['name_country']?>"/>
+                    </div>
+                    <div class="mb-2">
+                    <label class="form-label">Continent: </label>
+                    <input type="text" name="name_continents" class="form-control" placeholder="Enter fullname" value="<?=$item['name_continents']?>"/>
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-success">Save</button>
+                    </div>
+                </form>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </div>          
   <!--   Core JS Files   -->
   <script src="../assets/js/core/popper.min.js"></script>
   <script src="../assets/js/core/bootstrap.min.js"></script>

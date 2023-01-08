@@ -2,21 +2,6 @@
 require_once ('../admin/db/config.php');
 require_once ('../admin/db/dbhelper.php');
 ?>
-
-<!--
-=========================================================
-* Soft UI Dashboard - v1.0.7
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/soft-ui-dashboard
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://www.creative-tim.com/license)
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
--->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,7 +11,7 @@ require_once ('../admin/db/dbhelper.php');
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <title>
-    Soft UI Dashboard by Creative Tim
+    Soft UI Dashboard
   </title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
@@ -304,13 +289,9 @@ require_once ('../admin/db/dbhelper.php');
                     <div class="card-header pb-0">
                     <h6>Feedback List</h6>
                     </div>
-                    <div class="container">
+                    <div class="container-fluid">
                         <div class="panel panel-primary">
                             <div class="panel-body">
-                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                  <a href="add.php">
-                                  <button class="btn btn-primary me-md-2" type="button">Add Feedback</button></a>
-                                </div>
                                 <table class="table table-bordered-0 table-hover">
                                     <thead>
                                         <tr>
@@ -333,12 +314,12 @@ require_once ('../admin/db/dbhelper.php');
                                         $index = 1;
                                         foreach ($feedbackList as $item){
                                             echo '<tr>
-                                                    <td>'.($index++).'</td>
-                                                    <td>'.$item['name'].'</td>
-                                                    <td>'.$item['email'].'</td>
-                                                    <td>'.$item['cmt'].'</td>
-                                                    <td>'.$item['phone_number'].'</td>
-                                                    <td>'.$item['subject_name'].'</td>			
+                                                    <td class="text-center">'.($index++).'</td>
+                                                    <td class="text-center">'.$item['name'].'</td>
+                                                    <td class="text-center">'.$item['email'].'</td>
+                                                    <td class="text-center">'.$item['cmt'].'</td>
+                                                    <td class="text-center">'.$item['phone_number'].'</td>
+                                                    <td class="text-center">'.$item['subject_name'].'</td>			
                                                     <div class="d-grid gap-1 col-1 mx-auto">
                                                     <td>
                                                     <a href="add.php?id='.$item['id'].'"><button class="btn btn-warning mb-0" type="button">Edit</button></a> 
