@@ -2,21 +2,6 @@
 require_once ('../admin/db/config.php');
 require_once ('../admin/db/dbhelper.php');
 ?>
-
-<!--
-=========================================================
-* Soft UI Dashboard - v1.0.7
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/soft-ui-dashboard
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://www.creative-tim.com/license)
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
--->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,7 +11,7 @@ require_once ('../admin/db/dbhelper.php');
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <title>
-    Soft UI Dashboard by Creative Tim
+    Soft UI Dashboard
   </title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
@@ -304,7 +289,7 @@ require_once ('../admin/db/dbhelper.php');
             <div class="card-header pb-0">
               <h6>Admin List</h6>
             </div>
-              <div class="container">
+              <div class="container-fluid">
 		            <div class="panel panel-primary">
 			            <div class="panel-body">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
@@ -315,8 +300,7 @@ require_once ('../admin/db/dbhelper.php');
 					            <thead>
 						            <tr>
 							            <th class="col-1 text-center">No</th>
-							            <th class="col-1 text-center">Fullname</th>
-							            <th class="col-0 text-center">Username</th>
+							            <th class="col-0 text-center">Fullname</th>
 							            <th class="col-0 text-center">Password</th>
 							            <th class="col-0 text-center">Email</th>						
 							            <th class="col-1 text-center"></th>
@@ -326,15 +310,14 @@ require_once ('../admin/db/dbhelper.php');
                       <tbody>
                         <?php 
                         //Lấy danh sách danh mục từ database
-                        $sql = 'select * from users';
+                        $sql = 'select * from user';
                         $usersList = queryResult($sql);
 
                         $index = 1;
                         foreach ($usersList as $item){
                           echo '<tr>
                               <td class="col-1 text-center">'.($index++).'</td>
-                              <td class="col-1 text-center">'.$item['fullname'].'</td>
-                              <td class="col-0 text-center">'.$item['username'].'</td>
+                              <td class="col-0 text-center">'.$item['fullname'].'</td>
                               <td class="col-0 text-center">'.$item['password'].'</td>
                               <td class="col-0 text-center">'.$item['email'].'</td>			
                               <div class="d-grid gap-1 col-1 mx-auto">
