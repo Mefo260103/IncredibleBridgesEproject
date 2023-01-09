@@ -310,29 +310,29 @@ if(!empty($_POST)) {
                     </div>
                     <div class="mb-2">
                     <label class="form-label">Name Bridges: </label>
-                    <input type="text" name="name_brigdes" class="form-control" placeholder="Enter fullname" />
+                    <input type="text" name="name_brigdes" class="form-control" placeholder="Enter fullname"/>
                     </div>
                     <div class="mb-0">
                     <label class="form-label">Thumbnail: </label>
                     </div>
                     <div class="input-group mb-2">
-                    <input type="file" class="form-control" name="thumbnail" aria-label="Upload">
+                    <input type="file" class="form-control" name="thumbnail" aria-label="Upload"/>
                     </div>
                     <div class="mb-2">
                     <label class="form-label">Address: </label>
-                    <input type="text" name="address" class="form-control" placeholder="Enter fullname" />
+                    <input type="text" name="address" class="form-control" placeholder="Enter fullname"/>
                     </div>
                     <div class="mb-2">
                     <label class="form-label">City: </label>
-                    <input type="text" name="name_city" class="form-control" placeholder="Enter fullname" />
+                    <input type="text" name="name_city" class="form-control" placeholder="Enter fullname"/>
                     </div>
                     <div class="mb-2">
                     <label class="form-label">Country: </label>
-                    <input type="text" name="name_country" class="form-control" placeholder="Enter fullname" />
+                    <input type="text" name="name_country" class="form-control" placeholder="Enter fullname"/>
                     </div>
                     <div class="mb-2">
                     <label class="form-label">Continent: </label>
-                    <input type="text" name="name_continents" class="form-control" placeholder="Enter fullname" />
+                    <input type="text" name="name_continents" class="form-control" placeholder="Enter fullname"/>
                     </div>
                     <div class="d-grid gap-2 col-6 mx-auto">
                     <button class="btn btn-success">Save</button>

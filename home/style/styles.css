@@ -330,8 +330,8 @@ a{
 .about-us{
     width: 1200px;
     margin: 0 auto;
-    background-image: url('img/SlideImg/background2.jpg');
-    background-repeat: no-repeat;
+    background-image: url('../img/SlideImg/background2.jpg');
+    background-repeat: no-repeat; 
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -527,7 +527,7 @@ country banner  */
     flex-wrap: wrap;
 }
 .countrybannerfixed{ 
-    background-image: url('img/SlideImg/leo.jpg');
+    background-image: url('../img/SlideImg/leo.jpg');
     width: 97.5%;
     padding:20px;
     background-repeat: no-repeat;
@@ -549,7 +549,7 @@ country banner  */
 }
 
 #china{
-    background-image: url('img/SlideImg/china.jpg');
+    background-image: url('../img/SlideImg/china.jpg');
     background-position: center;
     border-radius: 10px;
     background-size: cover;
@@ -638,14 +638,14 @@ country banner  */
     outline: none;
 }
 .inputt-ct{
-    width:  93.7%;
+    width:  94.7%;
     padding: 5px;
     resize: none;
     margin-bottom: 5%;
     height: 150px;
 }
 .ctl-b{
-    width: 95.7%;
+    width: 94.7%;
     height: 30px;
     border-top: none;
     border-left: none;
@@ -730,7 +730,7 @@ input:focus{
     margin-top: 2%;
 }
 .fb-b{
-    width: 97.8%;
+    width: 97.5%;
     height: 30px;
     border-top: none;
     border-left: none;

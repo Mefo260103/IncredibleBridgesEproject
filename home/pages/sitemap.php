@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/home/style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/home/styles.css">
-    <link rel="stylesheet" href="/home/style/top10br.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../style/top10br.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="icon" href="http://www.domain.com/favicon.ico" type="image/x-icon" />
     <title>SITE MAP</title>
@@ -58,20 +58,20 @@
 <section>
     <div class="navbar-menu">
         <div class="navbar-left">
-            <a href="/home/index.html">
+            <a href="index.php">
                 <span class="lg">INCREDIBLE</span>
                 <span class="go">Bridges</span>
             </a>
         </div>
         <div class="navbar-right">
             <ul>
-                <li><a href="/home/index.html">HOME</a></li>
+                <li><a href="index.php">HOME</a></li>
                 <li>
                     <div class="dropdown">
                         <a href="#">BRIDGES</a>
                         <div class="dropdown-content">
                           <span class="list-bridges">
-                            <a href="/home/top10Bridges.html">TOP 10 BRIDGES ></a>
+                            <a href="../top10bridges/top10Bridges.php">TOP 10 BRIDGES ></a>
     
                                 <div class="top-content">
                                     <a href="">THE GOLDEN GATE BRIDGES</a><br>
@@ -87,21 +87,21 @@
                                 </div>
                               
                           </span>
-                          <span class="list-bridges "><a href="/home/list-bridges/longest.html">LONGEST ></a>
+                          <span class="list-bridges "><a href="/home/list-bridges/longest.php">LONGEST ></a>
                             <div class="top-content list-longest">
                                 <a href="">DANYANG–KUNSHAN GRAND BRIDGE</a><br>
                                 <a href="">TIANJIN GRAND BRIDGE</a><br>
                                 <a href="">MANCHAC SWAMP BRIDGE</a><br>
                             </div>
                             </span><br>
-                          <span class="list-bridges list-highest"><a href="/home/list-bridges/highest.html">HIGHEST ></a>
+                          <span class="list-bridges list-highest"><a href="/home/list-bridges/highest.php">HIGHEST ></a>
                             <div class="top-content list-highest">
                                 <a href="">DUGE BRIDGE</a><br>
                                 <a href="">SIDU RIVER BRIDGE</a><br>
                                 <a href="">PULI BRIDGE</a><br>
                             </div>  
                           </span><br>
-                          <span class="list-bridges "><a href="/home/list-bridges/oldest.html">OLDEST ></a>
+                          <span class="list-bridges "><a href="/home/list-bridges/oldest.php">OLDEST ></a>
                             <div class="top-content list-oldest">
                                 <a href="">BRIDGE NEAR LIMYRA</a><br>
                                 <a href="">FRANKFORD AVENUE BRIDGE</a><br>
@@ -111,12 +111,12 @@
                         </div>
                       </div>
                 </li>
-                <li><a href="/sitemap.html">SITE MAP</a></li>
-                <li><a href="/querry.html">QUERIES</a></li>
-                <li><a href="/home/gallery.html">GALLERY</a></li>
-                <li><a href="/abus.html">ABOUT US</a></li>
-                <li><a href="/ctus.html">CONTACT US</a></li>
-                <li><a href="/feedback.html">FEEDBACK</a></li>
+                <li><a href="sitemap.php">SITE MAP</a></li>
+                <li><a href="querry.php">QUERIES</a></li>
+                <li><a href="gallery.php">GALLERY</a></li>
+                <li><a href="abus.php">ABOUT US</a></li>
+                <li><a href="ctus.php">CONTACT US</a></li>
+                <li><a href="feedback.php">FEEDBACK</a></li>
             </ul>
         </div>
     </div>
@@ -125,11 +125,11 @@
     <div style="height: 200px;" class="container">
         <div class="sitemap">
 		<div class="sitemap-left">
-			<h3 class="name-title"><a href="/home/index.html">Home</a></h3>
-			<h3 class="name-title"><a href="/home/gallery.html">GALLERY</a></h3>
+			<h3 class="name-title"><a href="index.php">Home</a></h3>
+			<h3 class="name-title"><a href="gallery.php">GALLERY</a></h3>
 			<h3 class="name-title"><a href="#">Brigdes</a></h3>
 				<ul class="sitemap-menu">
-					<li class="title"><a href="/home/top10Bridges.html">TOP 10 Brigdes</a></li>
+					<li class="title"><a href="../top10bridges/top10Bridges.php">TOP 10 Brigdes</a></li>
 					<li><a href="">1. THE GOLDEN GATE BRIDGE</a></li>
 					<li><a href="">2. AKASHI KAIKYO BRIDGE</a></li>
 					<li><a href="">3. SUNSHINE SKYWAY BRIDGE</a></li>
@@ -140,26 +140,26 @@
 					<li><a href="">8. SYDNEY HARBOR BRIDGE</a></li>
 					<li><a href="">9. LEONARD P. ZAKIM BRIDGE</a></li>
 					<li><a href="">10. LONDON BRIDGE</a></li>
-					<li class="title"><a href="/home/list-bridges/longest.html">LONGEST</a></li>
+					<li class="title"><a href="/home/list-bridges/longest.php">LONGEST</a></li>
 					<li><a href="">1. DANYANG–KUNSHAN BRIDGE</a></li>
 					<li><a href="">2. TIANJIN GRAND BRIDGE</a></li>
 					<li><a href="">3. MANCHAC SWAMP BRIDGE</a></li>
-					<li class="title"><a href="/home/list-bridges/highest.html">HIGHEST</a></li>
+					<li class="title"><a href="/home/list-bridges/highest.php">HIGHEST</a></li>
 					<li><a href="">1. DUGE BRIDGE</a></li>
 					<li><a href="">2. SIDU RIVER BRIDGE</a></li>
 					<li><a href="">3. PULI BRIDGE</a></li>
-					<li class="title"><a href="/home/list-bridges/oldest.html">OLDEST</a></li>
+					<li class="title"><a href="/home/list-bridges/oldest.php">OLDEST</a></li>
 					<li><a href="">1. BRIDGE NEAR LIMYRA</a></li>
 					<li><a href="">2. KAPELLBRÜCKE</a></li>
 					<li><a href="">3. FRANKFORD AVENUE BRIDGE</a></li>
 				</ul>
-			<h3 class="name-title"><a href="/sitemap.html">Site Map</a></h3>
-			<h3 class="name-title"><a href="/querry.html">Querries</a></h3>		
-			<h3 class="name-title"><a href="/abus.html">About us</a></h3>
-			<h3 class="name-title"><a href="/ctus.html">Contact us></a></h3>
+			<h3 class="name-title"><a href="sitemap.php">Site Map</a></h3>
+			<h3 class="name-title"><a href="querry.php">Querries</a></h3>		
+			<h3 class="name-title"><a href="abus.php">About us</a></h3>
+			<h3 class="name-title"><a href="ctus.php">Contact us></a></h3>
 		</div>
 		<div class="sitemap-right">
-			<img src="./Site Map.png">
+			<img src="../img/querry/Site Map.png">
 		</div>
 
     </div>
@@ -171,15 +171,15 @@
             <div class="content-link link">
                 <h3>Quick Link</h3>
                 <ul>
-                    <li><a href="/home/index.html">Home</a></li>
-                    <li><a href="/home/top10Bridges.html">Bridges</a></li>
-                    <li><a href="/home/gallery.html">Gallery</a></li>
-                    <li><a href="/abus.html">About Us</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="../top10bridges/top10Bridges.php">Bridges</a></li>
+                    <li><a href="gallery.php">Gallery</a></li>
+                    <li><a href="abus.php">About Us</a></li>
                 </ul>
             </div>
             <div class="content-link social">
                 <div class="navbar-left navbar-social">
-                    <a href="/home/index.html">
+                    <a href="index.php">
                         <span class="lg">INCREDIBLE</span>
                         <span class="go">Bridges</span>
                     </a>
@@ -205,9 +205,9 @@
             <div class="content-link support">
                 <h3>Support</h3>
                 <ul>
-                    <li><a href="/querry.html">Help</a></li>
-                    <li><a href="/ctus.html">Get Support</a></li>
-                    <li><a href="/feedback.html">Feedback</a></li>
+                    <li><a href="querry.php">Help</a></li>
+                    <li><a href="ctus.php">Get Support</a></li>
+                    <li><a href="feedback.php">Feedback</a></li>
                 </ul>
             </div>
         </div>

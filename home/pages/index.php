@@ -1,24 +1,40 @@
+<?php
+if(!empty($_POST)) {
+	require_once ('../IncredibleBridgesEproject/Admin_eproject/admin/db/dbhelper.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/home/styles.css">
-    <link rel="stylesheet" href="/home/style/grid.css">
-    <link rel="stylesheet" href="/home/style/top10br.css">
+    <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/grid.css">
+    <link rel="stylesheet" href="../style/top10br.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="icon" href="http://www.domain.com/favicon.ico" type="image/x-icon" />
     <title>INCREDIBLE BRIDEGES</title>
+    <style>
+        .about-us{
+        background-image: url('../img/SlideImg/background2.jpg');
+        }
+        .countrybannerfixed{ 
+        background-image: url('../img/SlideImg/leo.jpg');
+        }
+        #china{
+        background-image: url('../img/SlideImg/china.jpg');
+        }
+    </style>
 </head>
 <body>
     <section>
         <div class="slideshow-container"></div>
         <div class="navbar">
             <div class="navbar-left">
-                <a href="/home/index.html">
+                <a href="home/index.php">
                     <span class="lg">INCREDIBLE</span>
                     <span class="go">Bridges</span>
                 </a>
@@ -26,15 +42,15 @@
             <div class="navbar-right">
                 <ul>
                     <li>
-                        <a href="/home/gallery.html">GALLERY</a>
+                        <a href="gallery.php">GALLERY</a>
                     </li>
                     <li>
-                        <a href="/home/top10Bridges.html">BRIDGES
+                        <a href="../top10bridges/top10Bridges.php">BRIDGES
                             <i class="fa-solid fa-caret-down"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="/abus.html">ABOUT US</a>
+                        <a href="abus.php">ABOUT US</a>
                     </li>
                 </ul>
             </div>
@@ -44,7 +60,7 @@
 
         <div class="Slide">
             <div class="mySlide fade">
-                <img src="img/SlideImg/img1.jpg" >
+                <img src="../img/SlideImg/img1.jpg" >
                 <div class="text">
                     <h3><a id="readmore" href="">
                         Golden Gate Bridge</a>
@@ -60,7 +76,7 @@
             </div>
 
             <div class="mySlide fade">
-                <img src="img/SlideImg/img2.jpg" >
+                <img src="../img/SlideImg/img2.jpg" >
                 <div class="text">
                     <h3><a id="readmore" href="">
                         Duge Bridge</a>
@@ -75,7 +91,7 @@
                 </div>
             </div>
             <div class="mySlide fade">
-                <img src="img/SlideImg/img3.jpg" >
+                <img src="../img/SlideImg/img3.jpg" >
                 <div class="text">
                     <h3><a id="readmore" href="">
                         Bridge near Limyra</a>
@@ -90,7 +106,7 @@
                 </div>
             </div>
             <div class="mySlide fade">
-                <img src="img/SlideImg/img4.jpg" >
+                <img src="../img/SlideImg/img4.jpg" >
                 <div class="text">
                     <h3><a id="readmore" href="">
                         Danyang-Kunshan Grand Bridge</a>
@@ -110,26 +126,26 @@
     </section>
 
 <!-- Menu -->
-        <section>
+<section>
     <div class="navbar-menu-fix">
         <div class="navbar-left">
-            <a href="index.html">
+            <a href="index.php">
                 <span class="lg">INCREDIBLE</span>
                 <span class="go">Bridges</span>
             </a>
         </div>
         <div class="navbar-right">
             <ul>
-                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">HOME</a></li>
                 <li>
                     <div class="dropdown">
                         <a href="#">BRIDGES</a>
                         <div class="dropdown-content">
                           <span class="list-bridges">
-                            <a href="/home/top10Bridges.html">TOP 10 BRIDGES ></a>
+                            <a href="../home/top10Bridges.php">TOP 10 BRIDGES ></a>
     
                                 <div class="top-content">
-                                    <a href="">THE GOLDEN GATE BRIDGES</a><br>
+                                    <a href="bridges.php">THE GOLDEN GATE BRIDGES</a><br>
                                     <a href="">AKASHI KAIKYO BRIDGE</a><br>
                                     <a href="">SUNSHINE SKYWAY BRIDGE</a><br>
                                     <a href="">TOWER BRIDGE</a><br>
@@ -142,21 +158,21 @@
                                 </div>
                               
                           </span>
-                          <span class="list-bridges "><a href="/home/list-bridges/longest.html">LONGEST ></a>
+                          <span class="list-bridges "><a href="../list-bridges/longest.php">LONGEST ></a>
                             <div class="top-content list-longest">
                                 <a href="">DANYANG–KUNSHAN GRAND BRIDGE</a><br>
                                 <a href="">TIANJIN GRAND BRIDGE</a><br>
                                 <a href="">MANCHAC SWAMP BRIDGE</a><br>
                             </div>
                             </span><br>
-                          <span class="list-bridges list-highest"><a href="/home/list-bridges/highest.html">HIGHEST ></a>
+                          <span class="list-bridges list-highest"><a href="../list-bridges/highest.php">HIGHEST ></a>
                             <div class="top-content list-highest">
                                 <a href="">DUGE BRIDGE</a><br>
                                 <a href="">SIDU RIVER BRIDGE</a><br>
                                 <a href="">PULI BRIDGE</a><br>
                             </div>  
                           </span><br>
-                          <span class="list-bridges "><a href="/home/list-bridges/oldest.html">OLDEST ></a>
+                          <span class="list-bridges "><a href="../list-bridges/oldest.php">OLDEST ></a>
                             <div class="top-content list-oldest">
                                 <a href="">BRIDGE NEAR LIMYRA</a><br>
                                 <a href="">FRANKFORD AVENUE BRIDGE</a><br>
@@ -166,43 +182,43 @@
                         </div>
                       </div>
                 </li>
-                <li><a href="/sitemap.html">SITE MAP</a></li>
-                <li><a href="/querry.html">QUERIES</a></li>
-                <li><a href="/home/gallery.html">GALLERY</a></li>
-                <li><a href="/abus.html">ABOUT US</a></li>
-                <li><a href="/ctus.html">CONTACT US</a></li>
-                <li><a href="/feedback.html">FEEDBACK</a></li>
+                <li><a href="sitemap.php">SITE MAP</a></li>
+                <li><a href="querry.php">QUERIES</a></li>
+                <li><a href="gallery.php">GALLERY</a></li>
+                <li><a href="abus.php">ABOUT US</a></li>
+                <li><a href="ctus.php">CONTACT US</a></li>
+                <li><a href="feedback.php">FEEDBACK</a></li>
             </ul>
         </div>
     </div>
-        </section>
+</section>
 
 <!--Container -->
     <div class="container">
         <div class="content-container">
             <div class="list-img">
-                <a href="top10Bridges.html"><img class="hvr" src="img/famousBr/img1.jpg" alt="">
+                <a href="../top10bridges/top10Bridges.php"><img class="hvr" src="../img/famousBr/img1.jpg" alt="">
                     <h3>FAMOUS BRIDGES</h3></a>
-                <a href="">GOLDEN GATE BRIDGE</a><br>
+                <a href="../top10bridges/goldengate.php">GOLDEN GATE BRIDGE</a><br>
                 <a href="">AKASHI KAIKYO BRIDGE</a><br>
                 <a href="">SUNSHINE SKYWAY BRIDGE</a>    
             </div>
             <div class="list-img">
-                <a href="/list-bridges/longest.html"><img class="hvr" src="img/longestBr/img-main.jpg" alt="">
+                <a href="../list-bridges/longest.php"><img class="hvr" src="../img/longestBr/img-main.jpg" alt="">
                     <h3>LONGREST BRIDGES</h3></a>
                 <a href="">DANYANG–KUNSHAN BRIDGE</a><br>
                 <a href="">TIANJIN GRAND BRIDGE</a><br>
                 <a href="">MANCHAC SWAMP BRIDGE</a>    
             </div>
             <div class="list-img">
-                <a href="/list-bridges/highest.html"><img class="hvr" src="img/highestbr/img1.jpg" alt="">
+                <a href="../list-bridges/highest.php"><img class="hvr" src="../img/highestbr/img1.jpg" alt="">
                     <h3>HIGHEST BRIDGES</h3></a>
                 <a href="">DUGE BRIDGE</a><br>
                 <a href="">SIDU RIVER BRIDGE</a><br>
                 <a href="">PULI BRIDGE</a>    
             </div>
             <div class="list-img">
-                <a href="/list-bridges/oldest.html"><img class="hvr" src="img/oldest/img1.jpg" alt="">
+                <a href="../list-bridges/oldest.php"><img class="hvr" src="../img/oldest/img1.jpg" alt="">
                     <h3>OLDEST BRIDGES</h3></a>
                 <a href="">Bridge near Limyra</a><br>
                 <a href="">Kapellbrücke</a><br>
@@ -230,7 +246,7 @@
                             </div>
                         </div>
                         <div class="country-name">
-                            <div id="china"   style="background-image: url('img/SlideImg/UK.jpg')">
+                            <div id="china"   style="background-image: url('../img/SlideImg/UK.jpg')">
                                 <div id="cardlabel">
                                     UK
                                 </div>
@@ -239,7 +255,7 @@
                         </div>
 
                         <div class="country-name">
-                            <div id="china" style="background-image: url('img/SlideImg/Pearl-Bridge-Japan.jpg')">
+                            <div id="china" style="background-image: url('../img/SlideImg/Pearl-Bridge-Japan.jpg')">
                                 <div id="cardlabel">
                                     JAPAN
                                 </div>
@@ -248,7 +264,7 @@
                         </div>
                         
                         <div class="country-name">
-                            <div id="china"  style="background-image: url('img/SlideImg/leo.jpg');">
+                            <div id="china"  style="background-image: url('../img/SlideImg/leo.jpg');">
                                 <div id="cardlabel">
                                     CHINA
                                 </div>
@@ -268,15 +284,15 @@
                     <p>The Golden Gate Bridge is a suspension bridge spanning the Golden Gate, the one-mile-wide (1.6 km) strait connecting San Francisco Bay and the Pacific Ocean. The structure links the U.S. city of San Francisco, California—the northern tip of the San Francisco Peninsula—to Marin County, carrying both U.S. Route 101 and California State Route 1 across the strait. It also carries pedestrian and bicycle traffic, and is designated as part of U.S. Bicycle Route 95.... <a   href="">read more</a></p>
                 </div>
                 <div class="img-content">
-                    <div class="img-visit"><img src="img/the most visited/img1.jpg" alt=""></div>
-                    <div class="img-visit"><img src="img/the most visited/img2.jpg" alt=""></div>
+                    <div class="img-visit"><img src="../img/the most visited/img1.jpg" alt=""></div>
+                    <div class="img-visit"><img src="../img/the most visited/img2.jpg" alt=""></div>
                 </div>
             </div>
 
             <div class="block-bridges "> 
                 <div class="img-content" style="margin-left:-15px;">
-                    <div class="img-visit"><img src="img/the most visited/img3.jpg" alt=""></div>
-                    <div class="img-visit"><img src="img/the most visited/img4.jpg" alt=""></div>
+                    <div class="img-visit"><img src="../img/the most visited/img3.jpg" alt=""></div>
+                    <div class="img-visit"><img src="../img/the most visited/img4.jpg" alt=""></div>
                 </div>
                 <div class=" content2 " >
                     <h3 style="color: red;font-size: 25px;">Akashi Kaikyo Bridge:</h3>
@@ -309,7 +325,7 @@
                     <div class="row">
                         <div class="col l-5 ">
         
-                            <a class="img-click"> <img  class="gallery-list-img" src="img/the most visited/img1.jpg" alt=""></a>
+                            <a class="img-click"> <img  class="gallery-list-img" src="../img/the most visited/img1.jpg" alt=""></a>
                             <a  href="" class="text-content-bridges"><button class="btn" value ="Golden Gate Bridges">Golden Gate Bridges</button></a>
                             <a href="">
                                 <button class="btn2">
@@ -318,7 +334,7 @@
                             </a>
                         </div>
                         <div class="col l-7">
-                            <a class="img-click"><img  class="gallery-list-img" src="img/gallery_IMG/img1.jpeg" alt=""></a>
+                            <a class="img-click"><img  class="gallery-list-img" src="../img/gallery_IMG/img1.jpeg" alt=""></a>
                             <a href="" class="text-content-bridges"><button class="btn" value="Puli Bridges">Puli Bridges</button></a>
                             <a href="">
                                 <button class="btn2">
@@ -331,7 +347,7 @@
                     <div class="row">
                         <div class="col l-4 ">
         
-                            <a class="img-click" ><img  class="gallery-list-img" src="img/gallery_IMG/img2.jpg" alt=""></a>
+                            <a class="img-click" ><img  class="gallery-list-img" src="../img/gallery_IMG/img2.jpg" alt=""></a>
                             <a href="" class="text-content-bridges"><button class="btn" value="London Bridges">London Bridges</button></a>
                             <a href="">
                                 <button class="btn2">
@@ -340,7 +356,7 @@
                             </a>
                         </div>
                         <div class="col l-4">
-                            <a class="img-click" ><img  class="gallery-list-img" src="img/gallery_IMG/img3.jpg" alt=""></a>
+                            <a class="img-click" ><img  class="gallery-list-img" src="../img/gallery_IMG/img3.jpg" alt=""></a>
                             <a href="" class="text-content-bridges"><button class="btn" value="Leonard Bunker Hill Bridge">Leonard Bunker Hill Bridge</button></a>
                             <a href="">
                                 <button class="btn2">
@@ -349,7 +365,7 @@
                             </a>
                         </div>
                         <div class="col l-4">
-                            <a class="img-click" ><img  class="gallery-list-img" src="img/gallery_IMG/img4.jpg" alt=""></a>
+                            <a class="img-click" ><img  class="gallery-list-img" src="../img/gallery_IMG/img4.jpg" alt=""></a>
                             <a href="" class="text-content-bridges"><button class="btn" value="Sedney Harbor Bridges">Sedney Harbor Bridges</button></a>
                             <a href="">
                                 <button class="btn2">
@@ -362,7 +378,7 @@
 
                     <div class="row">
                         <div class="col l-7 ">
-                            <a class="img-click"><img  class="gallery-list-img" src="img/gallery_IMG/img5.jpg" alt=""></a>
+                            <a class="img-click"><img  class="gallery-list-img" src="../img/gallery_IMG/img5.jpg" alt=""></a>
                             <a  href="" class="text-content-bridges"><button class="btn" value="Brooklyn Bridge">Brooklyn Bridge</button></a>
                             <a href="">
                                 <button class="btn2">
@@ -371,7 +387,7 @@
                             </a>
                         </div>
                         <div class="col l-5">
-                            <a class="img-click" ><img  class="gallery-list-img" src="img/gallery_IMG/img6.jpg" alt=""></a>
+                            <a class="img-click" ><img  class="gallery-list-img" src="../img/gallery_IMG/img6.jpg" alt=""></a>
                             <a href="" class="text-content-bridges"><button class="btn" value="Frankford Avenue Bridge">Frankford Avenue Bridge</button></a>
                             <a href="">
                                 <button class="btn2">
@@ -384,7 +400,7 @@
                     <div class="row">
                         <div class="col l-5" style="padding-top: 15px;">
                     
-                            <a class="img-click"><img style="height: 702px;" class="gallery-list-img" src="img/gallery_IMG/img7.jpg" alt=""></a>
+                            <a class="img-click"><img style="height: 702px;" class="gallery-list-img" src="../img/gallery_IMG/img7.jpg" alt=""></a>
                             <a  href="" class="text-content-bridges"><button class="btn" value="Duge Bridge">Duge Bridge</button></a>
                             <a href="">
                                 <button class="btn2">
@@ -395,7 +411,7 @@
                         <div class="colums l-7">
                             <div class="row" style="padding:15px 0;">
                                 <div class=" col l-6" >
-                                    <a class="img-click" ><img  class="gallery-list-img" src="img/gallery_IMG/img8.jpg" alt=""></a>
+                                    <a class="img-click" ><img  class="gallery-list-img" src="../img/gallery_IMG/img8.jpg" alt=""></a>
                                     <a  href="" class="text-content-bridges"><button class="btn" value="Sidu River Bridges">Sidu River Bridges</button></a>
                                     <a href="">
                                         <button class="btn2">
@@ -404,7 +420,7 @@
                                     </a>
                                 </div>
                                 <div class="col l-6">
-                                    <a class="img-click" ><img  class="gallery-list-img" src="img/gallery_IMG/img9.jpg" alt=""></a>
+                                    <a class="img-click" ><img  class="gallery-list-img" src="../img/gallery_IMG/img9.jpg" alt=""></a>
                                     <a  href="" class="text-content-bridges"><button class="btn" value="Duge Bridges">Duge Bridges</button></a>
                                     <a href="">
                                         <button class="btn2">
@@ -415,7 +431,7 @@
                             </div>
                             <div class="row" style="padding: 15px 0;">
                                 <div class="col l-6">
-                                    <a class="img-click"><img  class="gallery-list-img" src="img/gallery_IMG/img10.jpg" alt=""></a>
+                                    <a class="img-click"><img  class="gallery-list-img" src="../img/gallery_IMG/img10.jpg" alt=""></a>
                                     <a  href="" class="text-content-bridges"><button class="btn" value="Tower Bridges">Tower Bridges</button></a>
                                     <a href="">
                                         <button class="btn2">
@@ -424,7 +440,7 @@
                                     </a>
                                 </div>
                                 <div class="col l-6">
-                                    <a class="img-click" ><img  class="gallery-list-img" src="img/gallery_IMG/img11.jpg" alt=""></a>
+                                    <a class="img-click" ><img  class="gallery-list-img" src="../img/gallery_IMG/img11.jpg" alt=""></a>
                                     <a  href="" class="text-content-bridges"><button class="btn" value="Akashu Kaikyo Bridges">Akashu Kaikyo Bridges</button></a>
                                     <a href="">
                                         <button class="btn2">
@@ -438,13 +454,13 @@
                 </div>
                <div class="popup-image">
                 <span>&times;</span>
-                <img src="img/gallery_IMG/img1.jpeg" alt="">
+                <img src="../img/gallery_IMG/img1.jpeg" alt="">
                 <!-- <center class="name-bridges" >Golden Gate Bridges</center> -->
                </div> 
            
           <div style="text-align:end; padding-right: 14%">
               <button class="btn-readmore">
-                <a id="readmore" href="/home/gallery.html" >
+                <a id="readmore" href="gallery.php" >
                     SEE MORE >>
                 </a>
             </button>
@@ -468,15 +484,15 @@
             <div class="content-link link">
                 <h3>Quick Link</h3>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="/home/top10Bridges.html">Bridges</a></li>
-                    <li><a href="/home/gallery.html">Gallery</a></li>
-                    <li><a href="/abus.html">About Us</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="../top10bridges/top10Bridges.php">Bridges</a></li>
+                    <li><a href="gallery.php">Gallery</a></li>
+                    <li><a href="abus.php">About Us</a></li>
                 </ul>
             </div>
             <div class="content-link social">
                 <div class="navbar-left navbar-social">
-                    <a href="/home/index.html">
+                    <a href="index.php">
                         <span class="lg">INCREDIBLE</span>
                         <span class="go">Bridges</span>
                     </a>
@@ -502,9 +518,9 @@
             <div class="content-link support">
                 <h3>Support</h3>
                 <ul>
-                    <li><a href="/querry.html">Help</a></li>
-                    <li><a href="/ctus.html">Get Support</a></li>
-                    <li><a href="/feedback.html">Feedback</a></li>
+                    <li><a href="querry.php">Help</a></li>
+                    <li><a href="ctus.php">Get Support</a></li>
+                    <li><a href="feedback.php">Feedback</a></li>
                 </ul>
             </div>
         </div>
@@ -533,7 +549,7 @@
         slidesIndex++;
         if(slidesIndex > slides.length) {slidesIndex = 1}
         slides[slidesIndex-1].style.display="block"
-        setTimeout(showSlides,10000);
+        setTimeout(showSlides,5000);
 
        }
        

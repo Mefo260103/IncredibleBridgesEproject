@@ -1,62 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/home/style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&display=swap" rel="stylesheet">
-    <link rel="icon" href="http://www.domain.com/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <title>Querry-AMAZING BRIDGES</title>
+    <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/top10br.css">
+    <link rel="icon" href="http://www.domain.com/favicon.ico" type="image/x-icon" />
+    <!-- <link rel="stylesheet" href="abus.css"> -->
+    
+    <title>About Us-Incredible Bridges</title>
     <style>
-        .content-link.social{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            }
         .navbar-menu{
-            position: fixed;
-            top: 0;
-            right: 0;
-            z-index: 100;
-            width: 100%;
             left:-22px;
             right:0px;
-        }      
-        a{
-            text-decoration: none;
         }
     </style>
 </head>
 <body>
-   
-
-<!-- Menu -->
+<!-- Header(Menu) -->
 <section>
-    <div class="navbar-menu">
+    <div class="navbar-menu-fix">
         <div class="navbar-left">
-            <a href="/home/index.html">
+            <a href="index.php">
                 <span class="lg">INCREDIBLE</span>
                 <span class="go">Bridges</span>
             </a>
         </div>
         <div class="navbar-right">
             <ul>
-                <li><a href="/home/index.html">HOME</a></li>
+                <li><a href="index.php">HOME</a></li>
                 <li>
                     <div class="dropdown">
                         <a href="#">BRIDGES</a>
                         <div class="dropdown-content">
                           <span class="list-bridges">
-                            <a href="/home/top10Bridges.html">TOP 10 BRIDGES ></a>
+                            <a href="../home/top10Bridges.php">TOP 10 BRIDGES ></a>
     
                                 <div class="top-content">
-                                    <a href="">THE GOLDEN GATE BRIDGES</a><br>
+                                    <a href="bridges.php">THE GOLDEN GATE BRIDGES</a><br>
                                     <a href="">AKASHI KAIKYO BRIDGE</a><br>
                                     <a href="">SUNSHINE SKYWAY BRIDGE</a><br>
                                     <a href="">TOWER BRIDGE</a><br>
@@ -69,21 +54,21 @@
                                 </div>
                               
                           </span>
-                          <span class="list-bridges "><a href="/home/list-bridges/longest.html">LONGEST ></a>
+                          <span class="list-bridges "><a href="../list-bridges/longest.php">LONGEST ></a>
                             <div class="top-content list-longest">
                                 <a href="">DANYANG–KUNSHAN GRAND BRIDGE</a><br>
                                 <a href="">TIANJIN GRAND BRIDGE</a><br>
                                 <a href="">MANCHAC SWAMP BRIDGE</a><br>
                             </div>
                             </span><br>
-                          <span class="list-bridges list-highest"><a href="/home/list-bridges/highest.html">HIGHEST ></a>
+                          <span class="list-bridges list-highest"><a href="../list-bridges/highest.php">HIGHEST ></a>
                             <div class="top-content list-highest">
                                 <a href="">DUGE BRIDGE</a><br>
                                 <a href="">SIDU RIVER BRIDGE</a><br>
                                 <a href="">PULI BRIDGE</a><br>
                             </div>  
                           </span><br>
-                          <span class="list-bridges "><a href="/home/list-bridges/oldest.html">OLDEST ></a>
+                          <span class="list-bridges "><a href="../list-bridges/oldest.php">OLDEST ></a>
                             <div class="top-content list-oldest">
                                 <a href="">BRIDGE NEAR LIMYRA</a><br>
                                 <a href="">FRANKFORD AVENUE BRIDGE</a><br>
@@ -93,63 +78,67 @@
                         </div>
                       </div>
                 </li>
-                <li><a href="/sitemap.html">SITE MAP</a></li>
-                <li><a href="/querry.html">QUERIES</a></li>
-                <li><a href="/home/gallery.html">GALLERY</a></li>
-                <li><a href="/abus.html">ABOUT US</a></li>
-                <li><a href="/ctus.html">CONTACT US</a></li>
-                <li><a href="/feedback.html">FEEDBACK</a></li>
+                <li><a href="sitemap.php">SITE MAP</a></li>
+                <li><a href="querry.php">QUERIES</a></li>
+                <li><a href="gallery.php">GALLERY</a></li>
+                <li><a href="abus.php">ABOUT US</a></li>
+                <li><a href="ctus.php">CONTACT US</a></li>
+                <li><a href="feedback.php">FEEDBACK</a></li>
             </ul>
         </div>
     </div>
-        </section>
-<!--Container -->
-   <div class="container">
-        <div class="querry">
-            <div class="querry-left"> 
-                <img src="./Question map.png">
+</section>
+    <div class="ab-main">
+        <div class="ab-header">
+            <div class="ab-header-title">
+                <h1>ABOUT US</h1>
             </div>
-            <div class="querry-right">
-                <h1>FAQS</h1>
-                <button type="button" class="btn btn-light" data-toggle="collapse" data-target="#demo-1">Q:Is this website only for project purpose? 🔽</button>
-                <div id="demo-1" class="collapse">
-                A:Yes,this website is only for project purpose.
-                </div>
-                <br>
-                <button type="button" class="btn btn-light" data-toggle="collapse" data-target="#demo-2">Q:What is the purpose of this website? 🔽</button>
-                <div id="demo-2" class="collapse">
-                A:We want to bring you the informations of some incredible brigdes around the world,like the longest one, the highest one, or the oldest one,etc..
-                </div>
-                <br>
-                <button type="button" class="btn btn-light" data-toggle="collapse" data-target="#demo-3">Q:How can I feedback to you? 🔽</button>
-                <div id="demo-3" class="collapse">
-                A:You can contact to us through the "Contact us"
-                </div>
-                <br>
-                 <button type="button" class="btn btn-light" data-toggle="collapse" data-target="#demo-4">Q:I have some difficult in using this website. How can I get some help? 🔽</button>
-                <div id="demo-4" class="collapse">
-                A:We have the Site Map for you to easily using the website
-                </div>
+            <div class="ab-header-boddy">
+                <p>  We would love to respond to your queries and help you succeed.
+                <br> Feel free to get in touch with us.</p>
             </div>
-        </div>  
+        </div>
+        <div class="ab-container">    
+            <div class="ab-bd">
+                <p>THE INCREDIBLE BRIDGES is a Professional informative Platform.
+                which provides you the information regarding the famous bridges around the world
+                We're dedicated to providing you the best of information, with a focus on dependability. 
+                We're working to turn our passion for information into a booming online website. 
+                We hope you enjoy our information as much as we enjoy offering them to you. 
+                We will keep posting more important information on our Website for all of you. 
+                Thanks For Visiting Our Site</p>
+            </div>
+            <div><p>For more information
+                <a  class="ab-ct" href="ctus.php">Contact Us</a></p>
+            </div>
+            <div class="ab-ft">
+                <p>Do Visit:</p>
+                <ul class="list-icon">
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-<!-- footer -->
-
+  <!-- footer -->
+  
 <footer>
     <div class="ft-info">
         <div class="information">
             <div class="content-link link">
                 <h3>Quick Link</h3>
                 <ul>
-                    <li><a href="/home/index.html">Home</a></li>
-                    <li><a href="/home/top10Bridges.html">Bridges</a></li>
-                    <li><a href="/home/gallery.html">Gallery</a></li>
-                    <li><a href="/abus.html">About Us</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="../top10bridges/top10Bridges.php">Bridges</a></li>
+                    <li><a href="gallery.php">Gallery</a></li>
+                    <li><a href="abus.php">About Us</a></li>
                 </ul>
             </div>
             <div class="content-link social">
                 <div class="navbar-left navbar-social">
-                    <a href="/home/index.html">
+                    <a href="index.php">
                         <span class="lg">INCREDIBLE</span>
                         <span class="go">Bridges</span>
                     </a>
@@ -175,9 +164,9 @@
             <div class="content-link support">
                 <h3>Support</h3>
                 <ul>
-                    <li><a href="/querry.html">Help</a></li>
-                    <li><a href="/ctus.html">Get Support</a></li>
-                    <li><a href="/feedback.html">Feedback</a></li>
+                    <li><a href="querry.php">Help</a></li>
+                    <li><a href="ctus.php">Get Support</a></li>
+                    <li><a href="feedback.php">Feedback</a></li>
                 </ul>
             </div>
         </div>
@@ -191,5 +180,3 @@
 
 </body>
 </html>
-
-            
