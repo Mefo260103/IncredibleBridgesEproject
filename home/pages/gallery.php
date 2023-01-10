@@ -82,37 +82,38 @@
                             <a href="../home/top10Bridges.php">TOP 10 BRIDGES ></a>
     
                                 <div class="top-content">
-                                    <a href="bridges.php">THE GOLDEN GATE BRIDGES</a><br>
-                                    <a href="">AKASHI KAIKYO BRIDGE</a><br>
-                                    <a href="">SUNSHINE SKYWAY BRIDGE</a><br>
-                                    <a href="">TOWER BRIDGE</a><br>
-                                    <a href="">FORTH BRIDGE</a><br>
-                                    <a href="">BROOKLYN BRIDGE</a><br>
-                                    <a href="">CHESAPEAKE BAY BRIDGE–TUNNEL</a><br>
-                                    <a href="">SYDNEY HARBOUR BRIDGE</a><br>
-                                    <a href="">LEONARD P. ZAKIM BUNKER HILL BRIDGE</a><br>
-                                    <a href="">LONDON BRIDGE (LAKE HAVASU CITY)</a><br>
+                                    <a href="../top10bridges/goldengate.php">THE GOLDEN GATE BRIDGES</a><br>
+                                    <a href="../top10bridges/akashi.php">AKASHI KAIKYO BRIDGE</a><br>
+                                    <a href="../top10bridges/sushine.php">SUNSHINE SKYWAY BRIDGE</a><br>
+                                    <a href="../top10bridges/tower.php">TOWER BRIDGE</a><br>
+                                    <a href="../top10bridges/firthBrd.php">FORTH BRIDGE</a><br>
+                                    <a href="../top10bridges/brooklyn.php">BROOKLYN BRIDGE</a><br>
+                                    <a href="../top10bridges/chesapeake.php">CHESAPEAKE BAY BRIDGE–TUNNEL</a><br>
+                                    <a href="../top10bridges/sydnes.php">SYDNEY HARBOUR BRIDGE</a><br>
+                                    <a href="../top10bridges/leonard.php">LEONARD P. ZAKIM BUNKER HILL BRIDGE</a><br>
+                                    <a href="../top10bridges/london.php">LONDON BRIDGE (LAKE HAVASU CITY)</a><br>
                                 </div>
                               
                           </span>
                           <span class="list-bridges "><a href="../list-bridges/longest.php">LONGEST ></a>
                             <div class="top-content list-longest">
-                                <a href="">DANYANG–KUNSHAN GRAND BRIDGE</a><br>
-                                <a href="">TIANJIN GRAND BRIDGE</a><br>
-                                <a href="">MANCHAC SWAMP BRIDGE</a><br>
+                                <a href="../longest/danyang.php">DANYANG–KUNSHAN GRAND BRIDGE</a><br>
+                                <a href="../longest/tianjin.php">TIANJIN GRAND BRIDGE</a><br>
+                                <a href="../longest/manchac.php">MANCHAC SWAMP BRIDGE</a><br>
                             </div>
                             </span><br>
                           <span class="list-bridges list-highest"><a href="../list-bridges/highest.php">HIGHEST ></a>
                             <div class="top-content list-highest">
-                                <a href="">DUGE BRIDGE</a><br>
-                                <a href="">SIDU RIVER BRIDGE</a><br>
-                                <a href="">PULI BRIDGE</a><br>
+                                <a href="../highest/dugebr.php">DUGE BRIDGE</a><br>
+                                <a href="../highest/siduRiver.php">SIDU RIVER BRIDGE</a><br>
+                                <a href="../highest/puli.php">PULI BRIDGE</a><br>
                             </div>  
                           </span><br>
                           <span class="list-bridges "><a href="../list-bridges/oldest.php">OLDEST ></a>
                             <div class="top-content list-oldest">
-                                <a href="">BRIDGE NEAR LIMYRA</a><br>
-                                <a href="">FRANKFORD AVENUE BRIDGE</a><br>
+                                <a href="../oldest/limyra.php">BRIDGE NEAR LIMYRA</a><br>
+                                <a href="../oldest/kapellebrucke.php">KAPELLBRUCKE</a><br>
+                                <a href="../oldest/frankford.php">FRANKFORD AVENUE BRIDGE</a><br>
                                 
                             </div>  
                           </span><br>
@@ -139,8 +140,8 @@
                         <div class="col l-5 ">
         
                             <a class="img-click"> <img  class="gallery-list-img" src="../img/the most visited/img1.jpg" alt=""></a>
-                            <a  href=""><button class="btn">Golden Gate Bridges</button></a>
-                            <a href="">
+                            <a  href="../top10bridges/goldengate.php"><button class="btn">Golden Gate Bridges</button></a>
+                            <a href="../top10bridges/goldengate.php">
                                 <button class="btn2">
                                     <i class="fa-sharp fa-solid fa-location-dot"></i>
                                 </button>
@@ -148,8 +149,8 @@
                         </div>
                         <div class="col l-7">
                             <a class="img-click"><img  class="gallery-list-img" src="../img/gallery_IMG/img1.jpeg" alt=""></a>
-                            <a href=""><button class="btn">Puli Bridges</button></a>
-                            <a href="">
+                            <a href="../highest/puli.php"><button class="btn">Puli Bridges</button></a>
+                            <a href="../highest/puli.php">
                                 <button class="btn2">
                                 <i class="fa-sharp fa-solid fa-location-dot"></i>
                                 </button>
@@ -161,8 +162,8 @@
                         <div class="col l-4 ">
         
                             <a class="img-click" ><img  class="gallery-list-img" src="../img/gallery_IMG/img2.jpg" alt=""></a>
-                            <a href=""><button class="btn">London Bridges</button></a>
-                            <a href="">
+                            <a href="../top10bridges/london.php"><button class="btn">London Bridges</button></a>
+                            <a href="../top10bridges/london.php">
                                 <button class="btn2">
                                     <i class="fa-sharp fa-solid fa-location-dot"></i>
                                 </button>
@@ -170,8 +171,8 @@
                         </div>
                         <div class="col l-4">
                             <a class="img-click" ><img  class="gallery-list-img" src="../img/gallery_IMG/img3.jpg" alt=""></a>
-                            <a href=""><button class="btn">Leonard Bunker Hill Bridge</button></a>
-                            <a href="">
+                            <a href="../top10bridges/leonard.php"><button class="btn">Leonard Bunker Hill Bridge</button></a>
+                            <a href="../top10bridges/leonard.php">
                                 <button class="btn2">
                                 <i class="fa-sharp fa-solid fa-location-dot"></i>
                                 </button>
@@ -179,8 +180,8 @@
                         </div>
                         <div class="col l-4">
                             <a class="img-click" ><img  class="gallery-list-img" src="../img/gallery_IMG/img4.jpg" alt=""></a>
-                            <a href=""><button class="btn">Sedney Harbor Bridges</button></a>
-                            <a href="">
+                            <a href="../top10bridges/sydnes.php"><button class="btn">Sedney Harbor Bridges</button></a>
+                            <a href="../top10bridges/sydnes.php">
                                 <button class="btn2">
                                 <i class="fa-sharp fa-solid fa-location-dot"></i>
                                 </button>
@@ -201,8 +202,8 @@
                         </div>
                         <div class="col l-5">
                             <a class="img-click" ><img  class="gallery-list-img" src="../img/gallery_IMG/img6.jpg" alt=""></a>
-                            <a href=""><button class="btn">Frankford Avenue Bridge</button></a>
-                            <a href="">
+                            <a href="../top10bridges/brooklyn.php"><button class="btn">Frankford Avenue Bridge</button></a>
+                            <a href="../top10bridges/brooklyn.php">
                                 <button class="btn2">
                                 <i class="fa-sharp fa-solid fa-location-dot"></i>
                                 </button>
@@ -214,8 +215,8 @@
                         <div class="col l-5" style="padding-top: 15px;">
                     
                             <a class="img-click"><img style="height: 702px;" class="gallery-list-img" src="../img/gallery_IMG/img7.jpg" alt=""></a>
-                            <a  href=""><button class="btn">Duge Bridge</button></a>
-                            <a href="">
+                            <a  href="../highest/dugebr.php"><button class="btn">Duge Bridge</button></a>
+                            <a href="../highest/dugebr.php">
                                 <button class="btn2">
                                     <i class="fa-sharp fa-solid fa-location-dot"></i>
                                 </button>
@@ -225,8 +226,8 @@
                             <div class="row" style="padding:15px 0;">
                                 <div class=" col l-6" >
                                     <a class="img-click" ><img  class="gallery-list-img" src="../img/gallery_IMG/img8.jpg" alt=""></a>
-                                    <a  href=""><button class="btn">Sidu River Bridges</button></a>
-                                    <a href="">
+                                    <a  href="../highest/siduRiver"><button class="btn">Sidu River Bridges</button></a>
+                                    <a href="../highest/siduRiver">
                                         <button class="btn2">
                                             <i class="fa-sharp fa-solid fa-location-dot"></i>
                                         </button>
@@ -234,8 +235,8 @@
                                 </div>
                                 <div class="col l-6">
                                     <a class="img-click" ><img  class="gallery-list-img" src="../img/gallery_IMG/img9.jpg" alt=""></a>
-                                    <a  href=""><button class="btn">Duge Bridges</button></a>
-                                    <a href="">
+                                    <a  href="../highest/dugebr.php"><button class="btn">Duge Bridges</button></a>
+                                    <a href="../highest/dugebr.php">
                                         <button class="btn2">
                                             <i class="fa-sharp fa-solid fa-location-dot"></i>
                                         </button>
@@ -245,8 +246,8 @@
                             <div class="row" style="padding: 15px 0;">
                                 <div class="col l-6">
                                     <a class="img-click"><img  class="gallery-list-img" src="../img/gallery_IMG/img10.jpg" alt=""></a>
-                                    <a  href=""><button class="btn">Tower Bridges</button></a>
-                                    <a href="">
+                                    <a  href="../top10bridges/tower.php"><button class="btn">Tower Bridges</button></a>
+                                    <a href="../top10bridges/tower.php">
                                         <button class="btn2">
                                             <i class="fa-sharp fa-solid fa-location-dot"></i>
                                         </button>
@@ -254,8 +255,8 @@
                                 </div>
                                 <div class="col l-6">
                                     <a class="img-click" ><img  class="gallery-list-img" src="../img/gallery_IMG/img11.jpg" alt=""></a>
-                                    <a  href=""><button class="btn">Akashu Kaikyo Bridges</button></a>
-                                    <a href="">
+                                    <a  href="../top10bridges/akashi.php"><button class="btn">Akashu Kaikyo Bridges</button></a>
+                                    <a href="../top10bridges/akashi.php">
                                         <button class="btn2">
                                             <i class="fa-sharp fa-solid fa-location-dot"></i>
                                         </button>
@@ -269,8 +270,8 @@
                         <div class="col l-5 ">
         
                             <a class="img-click"> <img  class="gallery-list-img" src="../img/gallery_IMG/img12.jpg" alt=""></a>
-                            <a  href=""><button class="btn">Bridge Near Limyra</button></a>
-                            <a href="">
+                            <a  href="../oldest/limyra.php"><button class="btn">Bridge Near Limyra</button></a>
+                            <a href="../oldest/limyra.php">
                                 <button class="btn2">
                                     <i class="fa-sharp fa-solid fa-location-dot"></i>
                                 </button>
@@ -278,8 +279,8 @@
                         </div>
                         <div class="col l-7">
                             <a class="img-click"><img  class="gallery-list-img" src="../img/gallery_IMG/img13.jpg" alt=""></a>
-                            <a href=""><button class="btn">Kapellbrücke Bridge</button></a>
-                            <a href="">
+                            <a href="../oldest/kapellebrucke.php"><button class="btn">Kapellbrücke Bridge</button></a>
+                            <a href="../oldest/kapellebrucke.php">
                                 <button class="btn2">
                                 <i class="fa-sharp fa-solid fa-location-dot"></i>
                                 </button>
@@ -290,8 +291,8 @@
                     <div class="row">
                         <div class="col l-7 ">
                             <a class="img-click"><img  class="gallery-list-img" src="../img/gallery_IMG/img14.jpg" alt=""></a>
-                            <a  href=""><button class="btn">Firth Of Forth Bridge</button></a>
-                            <a href="">
+                            <a  href="../top10bridges/firthBrd.php"><button class="btn">Firth Of Forth Bridge</button></a>
+                            <a href="../top10bridges/firthBrd.php">
                                 <button class="btn2">
                                     <i class="fa-sharp fa-solid fa-location-dot"></i>
                                 </button>
@@ -299,8 +300,8 @@
                         </div>
                         <div class="col l-5">
                             <a class="img-click" ><img  class="gallery-list-img" src="../img/gallery_IMG/img15.jpg" alt=""></a>
-                            <a href=""><button class="btn">Tower Bridge</button></a>
-                            <a href="">
+                            <a href="../top10bridges/tower.php"><button class="btn">Tower Bridge</button></a>
+                            <a href="../top10bridges/tower.php">
                                 <button class="btn2">
                                 <i class="fa-sharp fa-solid fa-location-dot"></i>
                                 </button>
@@ -311,8 +312,8 @@
                     <div class="row">
                         <div class="col l-7 ">
                             <a class="img-click"><img  class="gallery-list-img" src="../img/gallery_IMG/img17.jpg" alt=""></a>
-                            <a  href=""><button class="btn">Manchac Swamp Bridge</button></a>
-                            <a href="">
+                            <a  href="../longest/manchac.php"><button class="btn">Manchac Swamp Bridge</button></a>
+                            <a href="../longest/manchac.php">
                                 <button class="btn2">
                                     <i class="fa-sharp fa-solid fa-location-dot"></i>
                                 </button>
@@ -320,8 +321,8 @@
                         </div>
                         <div class="col l-5">
                             <a class="img-click" ><img  class="gallery-list-img" src="../img/gallery_IMG/img18.jpg" alt=""></a>
-                            <a href=""><button class="btn">Tianjin Bridge</button></a>
-                            <a href="">
+                            <a href="../longest/tianjin.php"><button class="btn">Tianjin Bridge</button></a>
+                            <a href="../longest/tianjin.php">
                                 <button class="btn2">
                                 <i class="fa-sharp fa-solid fa-location-dot"></i>
                                 </button>
@@ -333,8 +334,8 @@
                         <div class="col l-5" style="padding-top: 15px;">
                     
                             <a class="img-click"><img style="height: 702px;" class="gallery-list-img" src="../img/gallery_IMG/img19.jpg" alt=""></a>
-                            <a  href=""><button class="btn">Danyang-Kunshan Bridge</button></a>
-                            <a href="">
+                            <a  href="../longest/danyang.php"><button class="btn">Danyang-Kunshan Bridge</button></a>
+                            <a href="../longest/danyang.php">
                                 <button class="btn2">
                                     <i class="fa-sharp fa-solid fa-location-dot"></i>
                                 </button>
@@ -344,8 +345,8 @@
                             <div class="row" style="padding:15px 0;">
                                 <div class=" col l-6" >
                                     <a class="img-click" ><img  class="gallery-list-img" src="../img/gallery_IMG/img20.jpg" alt=""></a>
-                                    <a  href=""><button class="btn">Chesapeake Bay Bridge</button></a>
-                                    <a href="">
+                                    <a  href="../top10bridges/chesapeake.php"><button class="btn">Chesapeake Bay Bridge</button></a>
+                                    <a href="../top10bridges/chesapeake.php">
                                         <button class="btn2">
                                             <i class="fa-sharp fa-solid fa-location-dot"></i>
                                         </button>
@@ -353,8 +354,8 @@
                                 </div>
                                 <div class="col l-6">
                                     <a class="img-click" ><img  class="gallery-list-img" src="../img/gallery_IMG/img21.jpg" alt=""></a>
-                                    <a  href=""><button class="btn">Akashi Kaikyo Bridge</button></a>
-                                    <a href="">
+                                    <a  href="../top10bridges/akashi.php"><button class="btn">Akashi Kaikyo Bridge</button></a>
+                                    <a href="../top10bridges/akashi.php">
                                         <button class="btn2">
                                             <i class="fa-sharp fa-solid fa-location-dot"></i>
                                         </button>
@@ -364,8 +365,8 @@
                             <div class="row" style="padding: 15px 0;">
                                 <div class="col l-6">
                                     <a class="img-click"><img  class="gallery-list-img" src="../img/gallery_IMG/img22.jpg" alt=""></a>
-                                    <a  href=""><button class="btn">Sunshine Skyway Bridge</button></a>
-                                    <a href="">
+                                    <a  href="../top10bridges/sushine.php"><button class="btn">Sunshine Skyway Bridge</button></a>
+                                    <a href="../top10bridges/sushine.php">
                                         <button class="btn2">
                                             <i class="fa-sharp fa-solid fa-location-dot"></i>
                                         </button>
@@ -373,8 +374,8 @@
                                 </div>
                                 <div class="col l-6">
                                     <a class="img-click" ><img  class="gallery-list-img" src="../img/gallery_IMG/img23.jpg" alt=""></a>
-                                    <a  href=""><button class="btn">The Golden Gate Bridge</button></a>
-                                    <a href="">
+                                    <a  href="../top10bridges/akashi.php"><button class="btn">The Golden Gate Bridge</button></a>
+                                    <a href="../top10bridges/akashi.php">
                                         <button class="btn2">
                                             <i class="fa-sharp fa-solid fa-location-dot"></i>
                                         </button>

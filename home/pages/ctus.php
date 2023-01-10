@@ -41,7 +41,7 @@ if(!empty($_POST)) {
         </div>
         <div class="navbar-right">
             <ul>
-                <li><a href="index.php">HOME</a></li>
+                <li><a href="#">HOME</a></li>
                 <li>
                     <div class="dropdown">
                         <a href="#">BRIDGES</a>
@@ -50,37 +50,38 @@ if(!empty($_POST)) {
                             <a href="../home/top10Bridges.php">TOP 10 BRIDGES ></a>
     
                                 <div class="top-content">
-                                    <a href="bridges.php">THE GOLDEN GATE BRIDGES</a><br>
-                                    <a href="">AKASHI KAIKYO BRIDGE</a><br>
-                                    <a href="">SUNSHINE SKYWAY BRIDGE</a><br>
-                                    <a href="">TOWER BRIDGE</a><br>
-                                    <a href="">FORTH BRIDGE</a><br>
-                                    <a href="">BROOKLYN BRIDGE</a><br>
-                                    <a href="">CHESAPEAKE BAY BRIDGE–TUNNEL</a><br>
-                                    <a href="">SYDNEY HARBOUR BRIDGE</a><br>
-                                    <a href="">LEONARD P. ZAKIM BUNKER HILL BRIDGE</a><br>
-                                    <a href="">LONDON BRIDGE (LAKE HAVASU CITY)</a><br>
+                                    <a href="../top10bridges/goldengate.php">THE GOLDEN GATE BRIDGES</a><br>
+                                    <a href="../top10bridges/akashi.php">AKASHI KAIKYO BRIDGE</a><br>
+                                    <a href="../top10bridges/sushine.php">SUNSHINE SKYWAY BRIDGE</a><br>
+                                    <a href="../top10bridges/tower.php">TOWER BRIDGE</a><br>
+                                    <a href="../top10bridges/firthBrd.php">FORTH BRIDGE</a><br>
+                                    <a href="../top10bridges/brooklyn.php">BROOKLYN BRIDGE</a><br>
+                                    <a href="../top10bridges/chesapeake.php">CHESAPEAKE BAY BRIDGE–TUNNEL</a><br>
+                                    <a href="../top10bridges/sydnes.php">SYDNEY HARBOUR BRIDGE</a><br>
+                                    <a href="../top10bridges/leonard.php">LEONARD P. ZAKIM BUNKER HILL BRIDGE</a><br>
+                                    <a href="../top10bridges/london.php">LONDON BRIDGE (LAKE HAVASU CITY)</a><br>
                                 </div>
                               
                           </span>
                           <span class="list-bridges "><a href="../list-bridges/longest.php">LONGEST ></a>
                             <div class="top-content list-longest">
-                                <a href="">DANYANG–KUNSHAN GRAND BRIDGE</a><br>
-                                <a href="">TIANJIN GRAND BRIDGE</a><br>
-                                <a href="">MANCHAC SWAMP BRIDGE</a><br>
+                                <a href="../longest/danyang.php">DANYANG–KUNSHAN GRAND BRIDGE</a><br>
+                                <a href="../longest/tianjin.php">TIANJIN GRAND BRIDGE</a><br>
+                                <a href="../longest/manchac.php">MANCHAC SWAMP BRIDGE</a><br>
                             </div>
                             </span><br>
                           <span class="list-bridges list-highest"><a href="../list-bridges/highest.php">HIGHEST ></a>
                             <div class="top-content list-highest">
-                                <a href="">DUGE BRIDGE</a><br>
-                                <a href="">SIDU RIVER BRIDGE</a><br>
-                                <a href="">PULI BRIDGE</a><br>
+                                <a href="../highest/dugebr.php">DUGE BRIDGE</a><br>
+                                <a href="../highest/siduRiver.php">SIDU RIVER BRIDGE</a><br>
+                                <a href="../highest/puli.php">PULI BRIDGE</a><br>
                             </div>  
                           </span><br>
                           <span class="list-bridges "><a href="../list-bridges/oldest.php">OLDEST ></a>
                             <div class="top-content list-oldest">
-                                <a href="">BRIDGE NEAR LIMYRA</a><br>
-                                <a href="">FRANKFORD AVENUE BRIDGE</a><br>
+                                <a href="../oldest/limyra.php">BRIDGE NEAR LIMYRA</a><br>
+                                <a href="../oldest/kapellebrucke.php">KAPELLBRUCKE</a><br>
+                                <a href="../oldest/frankford.php">FRANKFORD AVENUE BRIDGE</a><br>
                                 
                             </div>  
                           </span><br>

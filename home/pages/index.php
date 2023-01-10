@@ -62,7 +62,7 @@ if(!empty($_POST)) {
             <div class="mySlide fade">
                 <img src="../img/SlideImg/img1.jpg" >
                 <div class="text">
-                    <h3><a id="readmore" href="">
+                    <h3><a id="readmore" href="../top10bridges/goldengate.php">
                         Golden Gate Bridge</a>
                     </h3>
                     <h1>
@@ -70,7 +70,7 @@ if(!empty($_POST)) {
                     </h1>
                     <h5>
                         Golden Gate Bridge is most famous and most visited bridge in the World
-                        <br><a href="">read more</a>
+                        <br><a href="../top10bridges/goldengate.php">read more</a>
                     </h5>
                 </div>
             </div>
@@ -78,7 +78,7 @@ if(!empty($_POST)) {
             <div class="mySlide fade">
                 <img src="../img/SlideImg/img2.jpg" >
                 <div class="text">
-                    <h3><a id="readmore" href="">
+                    <h3><a id="readmore" href="../highest/dugebr.php">
                         Duge Bridge</a>
                     </h3>
                     <h1>
@@ -86,14 +86,14 @@ if(!empty($_POST)) {
                     </h1>
                     <h5>
                         HEIGHT : 565 metres (1,850 feet) above the Beipan River
-                        <a href="">read more</a>
+                        <a href="../highest/dugebr.php">read more</a>
                     </h5>
                 </div>
             </div>
             <div class="mySlide fade">
                 <img src="../img/SlideImg/img3.jpg" >
                 <div class="text">
-                    <h3><a id="readmore" href="">
+                    <h3><a id="readmore" href="../oldest/limyra.php">
                         Bridge near Limyra</a>
                     </h3>
                     <h1>
@@ -101,14 +101,14 @@ if(!empty($_POST)) {
                     </h1>
                     <h5>
                         Built in the late Late Helladic III (ca. 1300-1190 BC)
-                        <a href="">read more</a>
+                        <a href="../oldest/limyra.php">read more</a>
                     </h5>
                 </div>
             </div>
             <div class="mySlide fade">
                 <img src="../img/SlideImg/img4.jpg" >
                 <div class="text">
-                    <h3><a id="readmore" href="">
+                    <h3><a id="readmore" href="../longest/danyang.php">
                         Danyang-Kunshan Grand Bridge</a>
                     </h3>
                     <h1>
@@ -116,7 +116,7 @@ if(!empty($_POST)) {
                     </h1>
                     <h5>
                         LENGTH : 164.8-kilometre-long
-                        <a href="">read more</a>
+                        <a href="../longest/danyang.php">read more</a>
                     </h5>
                 </div>
             </div>
@@ -145,37 +145,38 @@ if(!empty($_POST)) {
                             <a href="../home/top10Bridges.php">TOP 10 BRIDGES ></a>
     
                                 <div class="top-content">
-                                    <a href="bridges.php">THE GOLDEN GATE BRIDGES</a><br>
-                                    <a href="">AKASHI KAIKYO BRIDGE</a><br>
-                                    <a href="">SUNSHINE SKYWAY BRIDGE</a><br>
-                                    <a href="">TOWER BRIDGE</a><br>
-                                    <a href="">FORTH BRIDGE</a><br>
-                                    <a href="">BROOKLYN BRIDGE</a><br>
-                                    <a href="">CHESAPEAKE BAY BRIDGE–TUNNEL</a><br>
-                                    <a href="">SYDNEY HARBOUR BRIDGE</a><br>
-                                    <a href="">LEONARD P. ZAKIM BUNKER HILL BRIDGE</a><br>
-                                    <a href="">LONDON BRIDGE (LAKE HAVASU CITY)</a><br>
+                                    <a href="../top10bridges/goldengate.php">THE GOLDEN GATE BRIDGES</a><br>
+                                    <a href="../top10bridges/akashi.php">AKASHI KAIKYO BRIDGE</a><br>
+                                    <a href="../top10bridges/sushine.php">SUNSHINE SKYWAY BRIDGE</a><br>
+                                    <a href="../top10bridges/tower.php">TOWER BRIDGE</a><br>
+                                    <a href="../top10bridges/firthBrd.php">FORTH BRIDGE</a><br>
+                                    <a href="../top10bridges/brooklyn.php">BROOKLYN BRIDGE</a><br>
+                                    <a href="../top10bridges/chesapeake.php">CHESAPEAKE BAY BRIDGE–TUNNEL</a><br>
+                                    <a href="../top10bridges/sydnes.php">SYDNEY HARBOUR BRIDGE</a><br>
+                                    <a href="../top10bridges/leonard.php">LEONARD P. ZAKIM BUNKER HILL BRIDGE</a><br>
+                                    <a href="../top10bridges/london.php">LONDON BRIDGE (LAKE HAVASU CITY)</a><br>
                                 </div>
                               
                           </span>
                           <span class="list-bridges "><a href="../list-bridges/longest.php">LONGEST ></a>
                             <div class="top-content list-longest">
-                                <a href="">DANYANG–KUNSHAN GRAND BRIDGE</a><br>
-                                <a href="">TIANJIN GRAND BRIDGE</a><br>
-                                <a href="">MANCHAC SWAMP BRIDGE</a><br>
+                                <a href="../longest/danyang.php">DANYANG–KUNSHAN GRAND BRIDGE</a><br>
+                                <a href="../longest/tianjin.php">TIANJIN GRAND BRIDGE</a><br>
+                                <a href="../longest/manchac.php">MANCHAC SWAMP BRIDGE</a><br>
                             </div>
                             </span><br>
                           <span class="list-bridges list-highest"><a href="../list-bridges/highest.php">HIGHEST ></a>
                             <div class="top-content list-highest">
-                                <a href="">DUGE BRIDGE</a><br>
-                                <a href="">SIDU RIVER BRIDGE</a><br>
-                                <a href="">PULI BRIDGE</a><br>
+                                <a href="../highest/dugebr.php">DUGE BRIDGE</a><br>
+                                <a href="../highest/siduRiver.php">SIDU RIVER BRIDGE</a><br>
+                                <a href="../highest/puli.php">PULI BRIDGE</a><br>
                             </div>  
                           </span><br>
                           <span class="list-bridges "><a href="../list-bridges/oldest.php">OLDEST ></a>
                             <div class="top-content list-oldest">
-                                <a href="">BRIDGE NEAR LIMYRA</a><br>
-                                <a href="">FRANKFORD AVENUE BRIDGE</a><br>
+                                <a href="../oldest/limyra.php">BRIDGE NEAR LIMYRA</a><br>
+                                <a href="../oldest/kapellebrucke.php">KAPELLBRUCKE</a><br>
+                                <a href="../oldest/frankford.php">FRANKFORD AVENUE BRIDGE</a><br>
                                 
                             </div>  
                           </span><br>
@@ -200,29 +201,29 @@ if(!empty($_POST)) {
                 <a href="../top10bridges/top10Bridges.php"><img class="hvr" src="../img/famousBr/img1.jpg" alt="">
                     <h3>FAMOUS BRIDGES</h3></a>
                 <a href="../top10bridges/goldengate.php">GOLDEN GATE BRIDGE</a><br>
-                <a href="">AKASHI KAIKYO BRIDGE</a><br>
-                <a href="">SUNSHINE SKYWAY BRIDGE</a>    
+                <a href="../top10bridges/akashi.php">AKASHI KAIKYO BRIDGE</a><br>
+                <a href="../top10bridges/sushine.php">SUNSHINE SKYWAY BRIDGE</a>    
             </div>
             <div class="list-img">
                 <a href="../list-bridges/longest.php"><img class="hvr" src="../img/longestBr/img-main.jpg" alt="">
                     <h3>LONGREST BRIDGES</h3></a>
-                <a href="">DANYANG–KUNSHAN BRIDGE</a><br>
-                <a href="">TIANJIN GRAND BRIDGE</a><br>
-                <a href="">MANCHAC SWAMP BRIDGE</a>    
+                <a href="../longest/danyang.php">DANYANG–KUNSHAN BRIDGE</a><br>
+                <a href="../longest/tianjin.php">TIANJIN GRAND BRIDGE</a><br>
+                <a href="../longest/manchac.php">MANCHAC SWAMP BRIDGE</a>    
             </div>
             <div class="list-img">
                 <a href="../list-bridges/highest.php"><img class="hvr" src="../img/highestbr/img1.jpg" alt="">
                     <h3>HIGHEST BRIDGES</h3></a>
-                <a href="">DUGE BRIDGE</a><br>
-                <a href="">SIDU RIVER BRIDGE</a><br>
-                <a href="">PULI BRIDGE</a>    
+                <a href="../highest/dugebr.php">DUGE BRIDGE</a><br>
+                <a href="../highest/siduRiver.php">SIDU RIVER BRIDGE</a><br>
+                <a href="../highest/puli.php">PULI BRIDGE</a>    
             </div>
             <div class="list-img">
                 <a href="../list-bridges/oldest.php"><img class="hvr" src="../img/oldest/img1.jpg" alt="">
                     <h3>OLDEST BRIDGES</h3></a>
-                <a href="">Bridge near Limyra</a><br>
-                <a href="">Kapellbrücke</a><br>
-                <a href="">Frankford Avenue Bridge</a>    
+                <a href="../oldest/limyra.php">Bridge near Limyra</a><br>
+                <a href="../oldest/kapellebrucke.php">Kapellbrücke</a><br>
+                <a href="../oldest/frankford.php">Frankford Avenue Bridge</a>    
             </div>
         </div>
         <!-- Country Banner  -->
@@ -326,8 +327,8 @@ if(!empty($_POST)) {
                         <div class="col l-5 ">
         
                             <a class="img-click"> <img  class="gallery-list-img" src="../img/the most visited/img1.jpg" alt=""></a>
-                            <a  href="" class="text-content-bridges"><button class="btn" value ="Golden Gate Bridges">Golden Gate Bridges</button></a>
-                            <a href="">
+                            <a  href="../top10bridges/goldengate.php" class="text-content-bridges"><button class="btn" value ="Golden Gate Bridges">Golden Gate Bridges</button></a>
+                            <a href="../top10bridges/goldengate.php">
                                 <button class="btn2">
                                     <i class="fa-sharp fa-solid fa-location-dot"></i>
                                 </button>
@@ -335,8 +336,8 @@ if(!empty($_POST)) {
                         </div>
                         <div class="col l-7">
                             <a class="img-click"><img  class="gallery-list-img" src="../img/gallery_IMG/img1.jpeg" alt=""></a>
-                            <a href="" class="text-content-bridges"><button class="btn" value="Puli Bridges">Puli Bridges</button></a>
-                            <a href="">
+                            <a href="../highest/puli.php" class="text-content-bridges"><button class="btn" value="Puli Bridges">Puli Bridges</button></a>
+                            <a href="../highest/puli.php">
                                 <button class="btn2">
                                 <i class="fa-sharp fa-solid fa-location-dot"></i>
                                 </button>
@@ -348,8 +349,8 @@ if(!empty($_POST)) {
                         <div class="col l-4 ">
         
                             <a class="img-click" ><img  class="gallery-list-img" src="../img/gallery_IMG/img2.jpg" alt=""></a>
-                            <a href="" class="text-content-bridges"><button class="btn" value="London Bridges">London Bridges</button></a>
-                            <a href="">
+                            <a href="../top10bridges/london.php" class="text-content-bridges"><button class="btn" value="London Bridges">London Bridges</button></a>
+                            <a href="../top10bridges/london.php">
                                 <button class="btn2">
                                     <i class="fa-sharp fa-solid fa-location-dot"></i>
                                 </button>
@@ -357,8 +358,8 @@ if(!empty($_POST)) {
                         </div>
                         <div class="col l-4">
                             <a class="img-click" ><img  class="gallery-list-img" src="../img/gallery_IMG/img3.jpg" alt=""></a>
-                            <a href="" class="text-content-bridges"><button class="btn" value="Leonard Bunker Hill Bridge">Leonard Bunker Hill Bridge</button></a>
-                            <a href="">
+                            <a href="../top10bridges/leonard.php" class="text-content-bridges"><button class="btn" value="Leonard Bunker Hill Bridge">Leonard Bunker Hill Bridge</button></a>
+                            <a href="../top10bridges/leonard.php">
                                 <button class="btn2">
                                 <i class="fa-sharp fa-solid fa-location-dot"></i>
                                 </button>
@@ -366,8 +367,8 @@ if(!empty($_POST)) {
                         </div>
                         <div class="col l-4">
                             <a class="img-click" ><img  class="gallery-list-img" src="../img/gallery_IMG/img4.jpg" alt=""></a>
-                            <a href="" class="text-content-bridges"><button class="btn" value="Sedney Harbor Bridges">Sedney Harbor Bridges</button></a>
-                            <a href="">
+                            <a href="../top10bridges/sydnes.php" class="text-content-bridges"><button class="btn" value="Sedney Harbor Bridges">Sedney Harbor Bridges</button></a>
+                            <a href="../top10bridges/sydnes.php">
                                 <button class="btn2">
                                 <i class="fa-sharp fa-solid fa-location-dot"></i>
                                 </button>
@@ -379,8 +380,8 @@ if(!empty($_POST)) {
                     <div class="row">
                         <div class="col l-7 ">
                             <a class="img-click"><img  class="gallery-list-img" src="../img/gallery_IMG/img5.jpg" alt=""></a>
-                            <a  href="" class="text-content-bridges"><button class="btn" value="Brooklyn Bridge">Brooklyn Bridge</button></a>
-                            <a href="">
+                            <a  href="../top10bridges/brooklyn.php" class="text-content-bridges"><button class="btn" value="Brooklyn Bridge">Brooklyn Bridge</button></a>
+                            <a href="../top10bridges/brooklyn.php">
                                 <button class="btn2">
                                     <i class="fa-sharp fa-solid fa-location-dot"></i>
                                 </button>
@@ -388,8 +389,8 @@ if(!empty($_POST)) {
                         </div>
                         <div class="col l-5">
                             <a class="img-click" ><img  class="gallery-list-img" src="../img/gallery_IMG/img6.jpg" alt=""></a>
-                            <a href="" class="text-content-bridges"><button class="btn" value="Frankford Avenue Bridge">Frankford Avenue Bridge</button></a>
-                            <a href="">
+                            <a href="../oldest/frankford.php" class="text-content-bridges"><button class="btn" value="Frankford Avenue Bridge">Frankford Avenue Bridge</button></a>
+                            <a href="../oldest/frankford.php">
                                 <button class="btn2">
                                 <i class="fa-sharp fa-solid fa-location-dot"></i>
                                 </button>
@@ -401,8 +402,8 @@ if(!empty($_POST)) {
                         <div class="col l-5" style="padding-top: 15px;">
                     
                             <a class="img-click"><img style="height: 702px;" class="gallery-list-img" src="../img/gallery_IMG/img7.jpg" alt=""></a>
-                            <a  href="" class="text-content-bridges"><button class="btn" value="Duge Bridge">Duge Bridge</button></a>
-                            <a href="">
+                            <a  href="../highest/dugebr.php" class="text-content-bridges"><button class="btn" value="Duge Bridge">Duge Bridge</button></a>
+                            <a href="../highest/dugebr.php">
                                 <button class="btn2">
                                     <i class="fa-sharp fa-solid fa-location-dot"></i>
                                 </button>
@@ -412,8 +413,8 @@ if(!empty($_POST)) {
                             <div class="row" style="padding:15px 0;">
                                 <div class=" col l-6" >
                                     <a class="img-click" ><img  class="gallery-list-img" src="../img/gallery_IMG/img8.jpg" alt=""></a>
-                                    <a  href="" class="text-content-bridges"><button class="btn" value="Sidu River Bridges">Sidu River Bridges</button></a>
-                                    <a href="">
+                                    <a  href="../highest/siduRiver.php" class="text-content-bridges"><button class="btn" value="Sidu River Bridges">Sidu River Bridges</button></a>
+                                    <a href="../highest/siduRiver.php">
                                         <button class="btn2">
                                             <i class="fa-sharp fa-solid fa-location-dot"></i>
                                         </button>
@@ -421,8 +422,8 @@ if(!empty($_POST)) {
                                 </div>
                                 <div class="col l-6">
                                     <a class="img-click" ><img  class="gallery-list-img" src="../img/gallery_IMG/img9.jpg" alt=""></a>
-                                    <a  href="" class="text-content-bridges"><button class="btn" value="Duge Bridges">Duge Bridges</button></a>
-                                    <a href="">
+                                    <a  href="../highest/dugebr.php" class="text-content-bridges"><button class="btn" value="Duge Bridges">Duge Bridges</button></a>
+                                    <a href="../highest/dugebr.php">
                                         <button class="btn2">
                                             <i class="fa-sharp fa-solid fa-location-dot"></i>
                                         </button>
@@ -432,8 +433,8 @@ if(!empty($_POST)) {
                             <div class="row" style="padding: 15px 0;">
                                 <div class="col l-6">
                                     <a class="img-click"><img  class="gallery-list-img" src="../img/gallery_IMG/img10.jpg" alt=""></a>
-                                    <a  href="" class="text-content-bridges"><button class="btn" value="Tower Bridges">Tower Bridges</button></a>
-                                    <a href="">
+                                    <a  href="../top10bridges/tower.php" class="text-content-bridges"><button class="btn" value="Tower Bridges">Tower Bridges</button></a>
+                                    <a href="../top10bridges/tower.php">
                                         <button class="btn2">
                                             <i class="fa-sharp fa-solid fa-location-dot"></i>
                                         </button>
@@ -441,8 +442,8 @@ if(!empty($_POST)) {
                                 </div>
                                 <div class="col l-6">
                                     <a class="img-click" ><img  class="gallery-list-img" src="../img/gallery_IMG/img11.jpg" alt=""></a>
-                                    <a  href="" class="text-content-bridges"><button class="btn" value="Akashu Kaikyo Bridges">Akashu Kaikyo Bridges</button></a>
-                                    <a href="">
+                                    <a  href="../top10bridges/akashi.php" class="text-content-bridges"><button class="btn" value="Akashu Kaikyo Bridges">Akashu Kaikyo Bridges</button></a>
+                                    <a href="../top10bridges/akashi.php">
                                         <button class="btn2">
                                             <i class="fa-sharp fa-solid fa-location-dot"></i>
                                         </button>

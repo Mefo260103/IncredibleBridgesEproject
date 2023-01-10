@@ -1,5 +1,5 @@
 <?php
-require_once ('../Admin_eproject/admin/db/dbhelper.php');
+require_once ('../../Admin_eproject/admin/db/dbhelper.php');
 ?>
 
 <!DOCTYPE html>
@@ -15,73 +15,73 @@ require_once ('../Admin_eproject/admin/db/dbhelper.php');
     <title>Golden Gate Brideges</title>
 </head>
 <body>
-    <section>
-        <div class="navbar-menu-fix">
-            <div class="navbar-left">
-                <a href="index.html">
-                    <span class="lg">INCREDIABLE</span>
-                    <span class="go">Bridges</span>
-                </a>
-            </div>
-            <div class="navbar-right">
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li>
-                        <div class="dropdown">
-                            <a href="#">BRIDGES</a>
-                            <div class="dropdown-content">
-                              <span class="list-bridges">
-                                <a href="/home/top10Bridges.html">TOP 10 BRIDGES ></a>
-        
-                                    <div class="top-content">
-                                        <a href="">THE GOLDEN GATE BRIDGES</a><br>
-                                        <a href="">AKASHI KAIKYO BRIDGE</a><br>
-                                        <a href="">SUNSHINE SKYWAY BRIDGE</a><br>
-                                        <a href="">TOWER BRIDGE</a><br>
-                                        <a href="">FORTH BRIDGE</a><br>
-                                        <a href="">BROOKLYN BRIDGE</a><br>
-                                        <a href="">CHESAPEAKE BAY BRIDGE–TUNNEL</a><br>
-                                        <a href="">SYDNEY HARBOUR BRIDGE</a><br>
-                                        <a href="">LEONARD P. ZAKIM BUNKER HILL BRIDGE</a><br>
-                                        <a href="">LONDON BRIDGE (LAKE HAVASU CITY)</a><br>
-                                    </div>
-                                  
-                              </span>
-                              <span class="list-bridges "><a href="/home/list-bridges/longest.html">LONGEST ></a>
-                                <div class="top-content list-longest">
-                                    <a href="">DANYANG–KUNSHAN GRAND BRIDGE</a><br>
-                                    <a href="">TIANJIN GRAND BRIDGE</a><br>
-                                    <a href="">MANCHAC SWAMP BRIDGE</a><br>
-                                </div>
-                                </span><br>
-                              <span class="list-bridges list-highest"><a href="/home/list-bridges/highest.html">HIGHEST ></a>
-                                <div class="top-content list-highest">
-                                    <a href="">DUGE BRIDGE</a><br>
-                                    <a href="">SIDU RIVER BRIDGE</a><br>
-                                    <a href="">PULI BRIDGE</a><br>
-                                </div>  
-                              </span><br>
-                              <span class="list-bridges "><a href="/home/list-bridges/oldest.html">OLDEST ></a>
-                                <div class="top-content list-oldest">
-                                    <a href="">BRIDGE NEAR LIMYRA</a><br>
-                                    <a href="">FRANKFORD AVENUE BRIDGE</a><br>
-                                    
-                                </div>  
-                              </span><br>
-                            </div>
-                          </div>
-                    </li>
-                    <li><a href="/sitemap.html">SITE MAP</a></li>
-                    <li><a href="/querry.html">QUERIES</a></li>
-                    <li><a href="/home/gallery.html">GALLERY</a></li>
-                    <li><a href="/abus.html">ABOUT US</a></li>
-                    <li><a href="/ctus.html">CONTACT US</a></li>
-                    <li><a href="/feedback.html">FEEDBACK</a></li>
-                </ul>
-            </div>
+<section>
+    <div class="navbar-menu-fix">
+        <div class="navbar-left">
+            <a href="index.php">
+                <span class="lg">INCREDIBLE</span>
+                <span class="go">Bridges</span>
+            </a>
         </div>
-    </section>
-
+        <div class="navbar-right">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a href="#">BRIDGES</a>
+                        <div class="dropdown-content">
+                          <span class="list-bridges">
+                            <a href="../home/top10Bridges.php">TOP 10 BRIDGES ></a>
+    
+                                <div class="top-content">
+                                    <a href="../top10bridges/goldengate.php">THE GOLDEN GATE BRIDGES</a><br>
+                                    <a href="../top10bridges/akashi.php">AKASHI KAIKYO BRIDGE</a><br>
+                                    <a href="../top10bridges/sushine.php">SUNSHINE SKYWAY BRIDGE</a><br>
+                                    <a href="../top10bridges/tower.php">TOWER BRIDGE</a><br>
+                                    <a href="../top10bridges/firthBrd.php">FORTH BRIDGE</a><br>
+                                    <a href="../top10bridges/brooklyn.php">BROOKLYN BRIDGE</a><br>
+                                    <a href="../top10bridges/chesapeake.php">CHESAPEAKE BAY BRIDGE–TUNNEL</a><br>
+                                    <a href="../top10bridges/sydnes.php">SYDNEY HARBOUR BRIDGE</a><br>
+                                    <a href="../top10bridges/leonard.php">LEONARD P. ZAKIM BUNKER HILL BRIDGE</a><br>
+                                    <a href="../top10bridges/london.php">LONDON BRIDGE (LAKE HAVASU CITY)</a><br>
+                                </div>
+                              
+                          </span>
+                          <span class="list-bridges "><a href="../list-bridges/longest.php">LONGEST ></a>
+                            <div class="top-content list-longest">
+                                <a href="../longest/danyang.php">DANYANG–KUNSHAN GRAND BRIDGE</a><br>
+                                <a href="../longest/tianjin.php">TIANJIN GRAND BRIDGE</a><br>
+                                <a href="../longest/manchac.php">MANCHAC SWAMP BRIDGE</a><br>
+                            </div>
+                            </span><br>
+                          <span class="list-bridges list-highest"><a href="../list-bridges/highest.php">HIGHEST ></a>
+                            <div class="top-content list-highest">
+                                <a href="../highest/dugebr.php">DUGE BRIDGE</a><br>
+                                <a href="../highest/siduRiver.php">SIDU RIVER BRIDGE</a><br>
+                                <a href="../highest/puli.php">PULI BRIDGE</a><br>
+                            </div>  
+                          </span><br>
+                          <span class="list-bridges "><a href="../list-bridges/oldest.php">OLDEST ></a>
+                            <div class="top-content list-oldest">
+                                <a href="../oldest/limyra.php">BRIDGE NEAR LIMYRA</a><br>
+                                <a href="../oldest/kapellebrucke.php">KAPELLBRUCKE</a><br>
+                                <a href="../oldest/frankford.php">FRANKFORD AVENUE BRIDGE</a><br>
+                                
+                            </div>  
+                          </span><br>
+                        </div>
+                      </div>
+                </li>
+                <li><a href="../pages/sitemap.php">SITE MAP</a></li>
+                <li><a href="../pages/querry.php">QUERIES</a></li>
+                <li><a href="../pages/gallery.php">GALLERY</a></li>
+                <li><a href="../pages/abus.php">ABOUT US</a></li>
+                <li><a href="../pages/ctus.php">CONTACT US</a></li>
+                <li><a href="../pages/feedback.php">FEEDBACK</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
     <?php 
                         //Lấy danh sách danh mục từ database
                         $sql = "select * from information where id = 19 ";
