@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../style/styles.css">
     <link rel="stylesheet" href="../style/top10br.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="icon" href="http://www.domain.com/favicon.ico" type="image/x-icon" />
@@ -74,49 +74,50 @@
                             <a href="../top10bridges/top10Bridges.php">TOP 10 BRIDGES ></a>
     
                                 <div class="top-content">
-                                    <a href="">THE GOLDEN GATE BRIDGES</a><br>
-                                    <a href="">AKASHI KAIKYO BRIDGE</a><br>
-                                    <a href="">SUNSHINE SKYWAY BRIDGE</a><br>
-                                    <a href="">TOWER BRIDGE</a><br>
-                                    <a href="">FORTH BRIDGE</a><br>
-                                    <a href="">BROOKLYN BRIDGE</a><br>
-                                    <a href="">CHESAPEAKE BAY BRIDGE–TUNNEL</a><br>
-                                    <a href="">SYDNEY HARBOUR BRIDGE</a><br>
-                                    <a href="">LEONARD P. ZAKIM BUNKER HILL BRIDGE</a><br>
-                                    <a href="">LONDON BRIDGE (LAKE HAVASU CITY)</a><br>
+                                    <a href="../top10bridges/goldengate.php">THE GOLDEN GATE BRIDGES</a><br>
+                                    <a href="../top10bridges/akashi.php">AKASHI KAIKYO BRIDGE</a><br>
+                                    <a href="../top10bridges/sunshine.php">SUNSHINE SKYWAY BRIDGE</a><br>
+                                    <a href="../top10bridges/tower.php">TOWER BRIDGE</a><br>
+                                    <a href="../top10bridges/firthBrd.php">FORTH BRIDGE</a><br>
+                                    <a href="../top10bridges/brooklyn.php">BROOKLYN BRIDGE</a><br>
+                                    <a href="../top10bridges/chesapeake.php">CHESAPEAKE BAY BRIDGE–TUNNEL</a><br>
+                                    <a href="../top10bridges/sydnes.php">SYDNEY HARBOUR BRIDGE</a><br>
+                                    <a href="../top10bridges/leonard.php">LEONARD P. ZAKIM BUNKER HILL BRIDGE</a><br>
+                                    <a href="../top10bridges/london.php">LONDON BRIDGE (LAKE HAVASU CITY)</a><br>
                                 </div>
                               
                           </span>
-                          <span class="list-bridges "><a href="/home/list-bridges/longest.php">LONGEST ></a>
+                          <span class="list-bridges "><a href="../list-bridges/longest.php">LONGEST ></a>
                             <div class="top-content list-longest">
-                                <a href="">DANYANG–KUNSHAN GRAND BRIDGE</a><br>
-                                <a href="">TIANJIN GRAND BRIDGE</a><br>
-                                <a href="">MANCHAC SWAMP BRIDGE</a><br>
+                                <a href="../longest/danyang.php">DANYANG–KUNSHAN GRAND BRIDGE</a><br>
+                                <a href="../longest/tianjin.php">TIANJIN GRAND BRIDGE</a><br>
+                                <a href="../longest/manchac.php">MANCHAC SWAMP BRIDGE</a><br>
                             </div>
                             </span><br>
-                          <span class="list-bridges list-highest"><a href="/home/list-bridges/highest.php">HIGHEST ></a>
+                          <span class="list-bridges list-highest"><a href="../list-bridges/highest.php">HIGHEST ></a>
                             <div class="top-content list-highest">
-                                <a href="">DUGE BRIDGE</a><br>
-                                <a href="">SIDU RIVER BRIDGE</a><br>
-                                <a href="">PULI BRIDGE</a><br>
+                                <a href="../highest/dugebr.php">DUGE BRIDGE</a><br>
+                                <a href="../highest/siduRiver.php">SIDU RIVER BRIDGE</a><br>
+                                <a href="../highest/puli.php">PULI BRIDGE</a><br>
                             </div>  
                           </span><br>
-                          <span class="list-bridges "><a href="/home/list-bridges/oldest.php">OLDEST ></a>
+                          <span class="list-bridges "><a href="../list-bridges/oldest.php">OLDEST ></a>
                             <div class="top-content list-oldest">
-                                <a href="">BRIDGE NEAR LIMYRA</a><br>
-                                <a href="">FRANKFORD AVENUE BRIDGE</a><br>
+                                <a href="../oldest/limyra.php">BRIDGE NEAR LIMYRA</a><br>
+                                <a href="../oldest/kapellebrucke.php">KAPELLBRUCKE</a><br>
+                                <a href="../oldest/frankford.php">FRANKFORD AVENUE BRIDGE</a><br>
                                 
                             </div>  
                           </span><br>
                         </div>
                       </div>
                 </li>
-                <li><a href="sitemap.php">SITE MAP</a></li>
-                <li><a href="querry.php">QUERIES</a></li>
-                <li><a href="gallery.php">GALLERY</a></li>
-                <li><a href="abus.php">ABOUT US</a></li>
-                <li><a href="ctus.php">CONTACT US</a></li>
-                <li><a href="feedback.php">FEEDBACK</a></li>
+                <li><a href="../pages/sitemap.php">SITE MAP</a></li>
+                <li><a href="../pages/querry.php">QUERIES</a></li>
+                <li><a href="../pages/gallery.php">GALLERY</a></li>
+                <li><a href="../pages/abus.php">ABOUT US</a></li>
+                <li><a href="../pages/ctus.php">CONTACT US</a></li>
+                <li><a href="../pages/feedback.php">FEEDBACK</a></li>
             </ul>
         </div>
     </div>

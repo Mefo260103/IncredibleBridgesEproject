@@ -38,7 +38,13 @@ body{
     position: relative;
 }
 
+.margin-o{
+    margin: 0 !important;;
+}
 
+.navbar-right{
+    margin-right: 50px;
+}
 
 .navbar-right ul{
     display: flex;
@@ -526,7 +532,7 @@ a{
 
 /* container 
 country banner  */
-.row{
+.country-row{
     display: flex;
     flex-wrap: wrap;
 }

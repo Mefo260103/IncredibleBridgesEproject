@@ -7,11 +7,12 @@ require_once ('../../Admin_eproject/admin/db/dbhelper.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../home/styles.css">
+    <link rel="stylesheet" href="../style/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <title>Golden Gate Brideges</title>
+    <link rel="icon" href="http://www.domain.com/favicon.ico" type="image/x-icon" />
+    <title>SIDU RIVER BRIDGE</title>
 </head>
 <body>
 <section>
@@ -35,7 +36,7 @@ require_once ('../../Admin_eproject/admin/db/dbhelper.php');
                                 <div class="top-content">
                                     <a href="../top10bridges/goldengate.php">THE GOLDEN GATE BRIDGES</a><br>
                                     <a href="../top10bridges/akashi.php">AKASHI KAIKYO BRIDGE</a><br>
-                                    <a href="../top10bridges/sushine.php">SUNSHINE SKYWAY BRIDGE</a><br>
+                                    <a href="../top10bridges/sunshine.php">SUNSHINE SKYWAY BRIDGE</a><br>
                                     <a href="../top10bridges/tower.php">TOWER BRIDGE</a><br>
                                     <a href="../top10bridges/firthBrd.php">FORTH BRIDGE</a><br>
                                     <a href="../top10bridges/brooklyn.php">BROOKLYN BRIDGE</a><br>
@@ -93,21 +94,21 @@ require_once ('../../Admin_eproject/admin/db/dbhelper.php');
                         }
                         ?>
 
-    <footer>
+<footer>
         <div class="ft-info">
             <div class="information">
                 <div class="content-link link">
                     <h3>Quick Link</h3>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="/home/top10Bridges.html">Bridges</a></li>
-                        <li><a href="/home/gallery.html">Gallery</a></li>
-                        <li><a href="/abus.html">About Us</a></li>
+                        <li><a href="../pages/index.php">Home</a></li>
+                        <li><a href="../top10bridges/top10Bridges.php">Bridges</a></li>
+                        <li><a href="../home/gallery.php">Gallery</a></li>
+                        <li><a href="../abus.php">About Us</a></li>
                     </ul>
                 </div>
                 <div class="content-link social">
                     <div class="navbar-left navbar-social">
-                        <a href="/home/index.html">
+                        <a href="../pages/index.php">
                             <span class="lg">INCREDIABLE</span>
                             <span class="go">Bridges</span>
                         </a>
@@ -133,9 +134,9 @@ require_once ('../../Admin_eproject/admin/db/dbhelper.php');
                 <div class="content-link support">
                     <h3>Support</h3>
                     <ul>
-                        <li><a href="/querry.html">Help</a></li>
-                        <li><a href="/ctus.html">Get Support</a></li>
-                        <li><a href="/feedback.html">Feedback</a></li>
+                        <li><a href="../pages/querry">Help</a></li>
+                        <li><a href="../pages/ctus.php">Get Support</a></li>
+                        <li><a href="../pages/feedback.php">Feedback</a></li>
                     </ul>
                 </div>
             </div>

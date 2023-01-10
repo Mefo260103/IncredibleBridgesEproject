@@ -20,25 +20,25 @@
     <section>
     <div class="navbar-menu-fix">
         <div class="navbar-left">
-            <a href="index.php">
+            <a href="../pages/index.php">
                 <span class="lg">INCREDIBLE</span>
                 <span class="go">Bridges</span>
             </a>
         </div>
-        <div class="navbar-right">
+        <div class="navbar-right margin-o">
             <ul>
-                <li><a href="#">HOME</a></li>
+                <li><a href="../pages/index.php">HOME</a></li>
                 <li>
                     <div class="dropdown">
                         <a href="#">BRIDGES</a>
                         <div class="dropdown-content">
                           <span class="list-bridges">
-                            <a href="../home/top10Bridges.php">TOP 10 BRIDGES ></a>
+                            <a href="../top10bridges/top10Bridges.php">TOP 10 BRIDGES ></a>
     
                                 <div class="top-content">
                                     <a href="../top10bridges/goldengate.php">THE GOLDEN GATE BRIDGES</a><br>
                                     <a href="../top10bridges/akashi.php">AKASHI KAIKYO BRIDGE</a><br>
-                                    <a href="../top10bridges/sushine.php">SUNSHINE SKYWAY BRIDGE</a><br>
+                                    <a href="../top10bridges/sunshine.php">SUNSHINE SKYWAY BRIDGE</a><br>
                                     <a href="../top10bridges/tower.php">TOWER BRIDGE</a><br>
                                     <a href="../top10bridges/firthBrd.php">FORTH BRIDGE</a><br>
                                     <a href="../top10bridges/brooklyn.php">BROOKLYN BRIDGE</a><br>
@@ -220,6 +220,7 @@
          
          
     </div>
+    
 
     <footer>
         <div class="ft-info">
@@ -227,16 +228,16 @@
                 <div class="content-link link">
                     <h3>Quick Link</h3>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="/home/top10Bridges.html">Bridges</a></li>
-                        <li><a href="/home/gallery.html">Gallery</a></li>
-                        <li><a href="/abus.html">About Us</a></li>
+                        <li><a href="../pages/index.php">Home</a></li>
+                        <li><a href="../top10bridges/top10Bridges.php">Bridges</a></li>
+                        <li><a href="../pages/gallery.php">Gallery</a></li>
+                        <li><a href="../pages/abus.php">About Us</a></li>
                     </ul>
                 </div>
                 <div class="content-link social">
                     <div class="navbar-left navbar-social">
-                        <a href="/home/index.html">
-                            <span class="lg">INCREDIBLE</span>
+                        <a href="../pages/index.php">
+                            <span class="lg">INCREDIABLE</span>
                             <span class="go">Bridges</span>
                         </a>
                     </div>
@@ -261,16 +262,16 @@
                 <div class="content-link support">
                     <h3>Support</h3>
                     <ul>
-                        <li><a href="/querry.html">Help</a></li>
-                        <li><a href="/ctus.html">Get Support</a></li>
-                        <li><a href="/feedback.html">Feedback</a></li>
+                        <li><a href="../pages/querry">Help</a></li>
+                        <li><a href="../pages/ctus.php">Get Support</a></li>
+                        <li><a href="../pages/feedback.php">Feedback</a></li>
                     </ul>
                 </div>
             </div>
             <hr>
             <div class="footer-copyright">
                 <i class="fa-solid fa-copyright"></i>
-            <span>Copyright 2022 - INCREDIBLE Bridges</span>
+            <span>Copyright 2022 - INCREDIABLE Bridges</span>
             </div>
         </div>
     </footer>

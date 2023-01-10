@@ -39,7 +39,7 @@ if(!empty($_POST)) {
                 <span class="go">Bridges</span>
             </a>
         </div>
-        <div class="navbar-right">
+        <div class="navbar-right margin-o">
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li>
@@ -52,7 +52,7 @@ if(!empty($_POST)) {
                                 <div class="top-content">
                                     <a href="../top10bridges/goldengate.php">THE GOLDEN GATE BRIDGES</a><br>
                                     <a href="../top10bridges/akashi.php">AKASHI KAIKYO BRIDGE</a><br>
-                                    <a href="../top10bridges/sushine.php">SUNSHINE SKYWAY BRIDGE</a><br>
+                                    <a href="../top10bridges/sunshine.php">SUNSHINE SKYWAY BRIDGE</a><br>
                                     <a href="../top10bridges/tower.php">TOWER BRIDGE</a><br>
                                     <a href="../top10bridges/firthBrd.php">FORTH BRIDGE</a><br>
                                     <a href="../top10bridges/brooklyn.php">BROOKLYN BRIDGE</a><br>
