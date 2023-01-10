@@ -73,13 +73,13 @@
         </div>
         <div class="navbar-right margin-o">
             <ul>
-                <li><a href="#">HOME</a></li>
+                <li><a href="index.php">HOME</a></li>
                 <li>
                     <div class="dropdown">
                         <a href="#">BRIDGES</a>
                         <div class="dropdown-content">
                           <span class="list-bridges">
-                            <a href="../home/top10Bridges.php">TOP 10 BRIDGES ></a>
+                            <a href="../top10bridges/top10Bridges.php">TOP 10 BRIDGES ></a>
     
                                 <div class="top-content">
                                     <a href="../top10bridges/goldengate.php">THE GOLDEN GATE BRIDGES</a><br>

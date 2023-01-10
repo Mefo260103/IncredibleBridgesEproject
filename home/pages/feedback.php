@@ -45,7 +45,7 @@ if(!empty($_POST)) {
         </div>
         <div class="navbar-right ">
             <ul>
-                <li><a href="#">HOME</a></li>
+                <li><a href="index.php">HOME</a></li>
                 <li>
                     <div class="dropdown">
                         <a href="#">BRIDGES</a>
