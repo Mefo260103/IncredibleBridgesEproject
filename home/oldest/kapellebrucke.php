@@ -1,11 +1,14 @@
+<?php
+require_once ('../Admin_eproject/admin/db/dbhelper.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/home/style/grid.css">
-    <link rel="stylesheet" href="/home/styles.css">
+    <link rel="stylesheet" href="../home/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -79,7 +82,16 @@
         </div>
     </section>
 
-
+    <?php 
+                        //Lấy danh sách danh mục từ database
+                        $sql = "select * from information where id = 18 ";
+                        $informationList = queryResult($sql);
+                        $index = 1;
+                        $item = queryResult($sql, true);
+                        foreach ($informationList as $item){
+                          echo ''.$item['content'].'';
+                        }
+                        ?>
 
     <footer>
         <div class="ft-info">
