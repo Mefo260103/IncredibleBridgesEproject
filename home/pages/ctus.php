@@ -1,6 +1,6 @@
 <?php
 if(!empty($_POST)) {
-	require_once ('../IncredibleBridgesEproject/Admin_eproject/admin/db/dbhelper.php');
+	require_once ('../../Admin_eproject/admin/db/dbhelper.php');
 
 	$name = $_POST['name'];
 	$email = $_POST['email'];
