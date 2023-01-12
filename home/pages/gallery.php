@@ -458,15 +458,17 @@
     <script>
         
         var img= document.querySelectorAll('.img-click img')
-        img.forEach(image => {
-          image.onclick = () => {
-              document.querySelector('.popup-image').style.display= 'block';
-              document.querySelector('.popup-image img').src = image.getAttribute('src');
-          }
-        })
-        document.querySelector('.popup-image span').onclick =() =>{
-          document.querySelector('.popup-image').style.display= 'none';
-        } 
+      img.forEach(image => {
+        image.onclick = () => {
+                document.querySelector('.popup-image').style.display= 'block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src'); 
+                document.querySelector('.navbar-menu-fix').style.display='none';    
+        }
+      })
+      document.querySelector('.popup-image span').onclick =() =>{
+        document.querySelector('.popup-image').style.display= 'none';
+        document.querySelector('.navbar-menu-fix').style.display='flex'; 
+      } 
       </script>
 </body>
 </html>

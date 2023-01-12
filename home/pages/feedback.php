@@ -51,7 +51,7 @@ if(!empty($_POST)) {
                         <a href="#">BRIDGES</a>
                         <div class="dropdown-content">
                           <span class="list-bridges">
-                            <a href="../home/top10Bridges.php">TOP 10 BRIDGES ></a>
+                            <a href="../top10bridges/top10Bridges.php">TOP 10 BRIDGES ></a>
     
                                 <div class="top-content">
                                     <a href="../top10bridges/goldengate.php">THE GOLDEN GATE BRIDGES</a><br>

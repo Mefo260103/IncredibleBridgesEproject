@@ -31,6 +31,9 @@
         a{
             text-decoration: none;
         }
+        .navbar-menu{
+            width:102%;
+        }
     </style>
 </head>
 <body>

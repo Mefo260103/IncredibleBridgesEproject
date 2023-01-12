@@ -38,11 +38,11 @@
         .sitemap-menu li:hover a{
             transition: 0.5s;
             letter-spacing: 1px;
-            color: rgb(199, 27, 27);
+            color:rgb(199, 27, 27);
         }
         .name-title a{
             font-size: 25px;
-            color: #262626;
+            color:#262626;
         }
         .name-title:hover a{
             color: rgb(199, 27, 27);
@@ -74,6 +74,7 @@
                             <a href="../top10bridges/top10Bridges.php">TOP 10 BRIDGES ></a>
     
                                 <div class="top-content">
+                                    
                                     <a href="../top10bridges/goldengate.php">THE GOLDEN GATE BRIDGES</a><br>
                                     <a href="../top10bridges/akashi.php">AKASHI KAIKYO BRIDGE</a><br>
                                     <a href="../top10bridges/sunshine.php">SUNSHINE SKYWAY BRIDGE</a><br>
@@ -131,28 +132,28 @@
 			<h3 class="name-title"><a href="#">Brigdes</a></h3>
 				<ul class="sitemap-menu">
 					<li class="title"><a href="../top10bridges/top10Bridges.php">TOP 10 Brigdes</a></li>
-					<li><a href="">1. THE GOLDEN GATE BRIDGE</a></li>
-					<li><a href="">2. AKASHI KAIKYO BRIDGE</a></li>
-					<li><a href="">3. SUNSHINE SKYWAY BRIDGE</a></li>
-					<li><a href="">4. TOWER BRIDGE</a></li>
-					<li><a href="">5. FIRTH OF FORTH BRIDGE</a></li>
-					<li><a href="">6. BROOKLYN BRIDGE</a></li>
-					<li><a href="">7. CHESAPEAKE BAY BRIDGE</a></li>
-					<li><a href="">8. SYDNEY HARBOR BRIDGE</a></li>
-					<li><a href="">9. LEONARD P. ZAKIM BRIDGE</a></li>
-					<li><a href="">10. LONDON BRIDGE</a></li>
+					<li><a href="../top10bridges/goldengate.php">1. THE GOLDEN GATE BRIDGE</a></li>
+					<li><a href="../top10bridges/akashi.php">2. AKASHI KAIKYO BRIDGE</a></li>
+					<li><a href="../top10bridges/sunshine.php">3. SUNSHINE SKYWAY BRIDGE</a></li>
+					<li><a href="../top10bridges/tower.php">4. TOWER BRIDGE</a></li>
+					<li><a href="../top10bridges/firthBrd.php">5. FIRTH OF FORTH BRIDGE</a></li>
+					<li><a href="../top10bridges/brooklyn.php">6. BROOKLYN BRIDGE</a></li>
+					<li><a href="../top10bridges/chesapeake.php">7. CHESAPEAKE BAY BRIDGE</a></li>
+					<li><a href="../top10bridges/sydnes.php">8. SYDNEY HARBOR BRIDGE</a></li>
+					<li><a href="../top10bridges/leonard.php">9. LEONARD P. ZAKIM BRIDGE</a></li>
+					<li><a href="../top10bridges/london.php">10. LONDON BRIDGE</a></li>
 					<li class="title"><a href="/home/list-bridges/longest.php">LONGEST</a></li>
-					<li><a href="">1. DANYANG–KUNSHAN BRIDGE</a></li>
-					<li><a href="">2. TIANJIN GRAND BRIDGE</a></li>
-					<li><a href="">3. MANCHAC SWAMP BRIDGE</a></li>
+					<li><a href="../longest/danyang.php">1. DANYANG–KUNSHAN BRIDGE</a></li>
+					<li><a href="../longest/tianjin.php">2. TIANJIN GRAND BRIDGE</a></li>
+					<li><a href="../longest/manchac.php">3. MANCHAC SWAMP BRIDGE</a></li>
 					<li class="title"><a href="/home/list-bridges/highest.php">HIGHEST</a></li>
-					<li><a href="">1. DUGE BRIDGE</a></li>
-					<li><a href="">2. SIDU RIVER BRIDGE</a></li>
-					<li><a href="">3. PULI BRIDGE</a></li>
+					<li><a href="../highest/dugebr.php">1. DUGE BRIDGE</a></li>
+					<li><a href="../highest/siduRiver.php">2. SIDU RIVER BRIDGE</a></li>
+					<li><a href="../highest/puli.php">3. PULI BRIDGE</a></li>
 					<li class="title"><a href="/home/list-bridges/oldest.php">OLDEST</a></li>
-					<li><a href="">1. BRIDGE NEAR LIMYRA</a></li>
-					<li><a href="">2. KAPELLBRÜCKE</a></li>
-					<li><a href="">3. FRANKFORD AVENUE BRIDGE</a></li>
+					<li><a href="../oldest/limyra.php">1. BRIDGE NEAR LIMYRA</a></li>
+					<li><a href="../oldest/kapellebrucke.php">2. KAPELLBRÜCKE</a></li>
+					<li><a href="../oldest/frankford.php">3. FRANKFORD AVENUE BRIDGE</a></li>
 				</ul>
 			<h3 class="name-title"><a href="sitemap.php">Site Map</a></h3>
 			<h3 class="name-title"><a href="querry.php">Querries</a></h3>		

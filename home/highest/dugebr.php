@@ -86,7 +86,7 @@ require_once ('../../Admin_eproject/admin/db/dbhelper.php');
 
     <?php 
                         //Lấy danh sách danh mục từ database
-                        $sql = "select * from information where id = 1 ";
+                        $sql = "select * from information where id = 14 ";
                         $informationList = queryResult($sql);
                         $index = 14;
                         $item = queryResult($sql, true);
